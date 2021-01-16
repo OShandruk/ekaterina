@@ -4130,7 +4130,7 @@ body.lock {
   background: url(../img/header/main_bg.jpg) center/cover no-repeat; }
 
 .main__screen {
-  height: 950px;
+  height: 100vh;
 }
 
 @media (min-width: 991.98px) {
