@@ -1676,7 +1676,7 @@ function scroll_animate(event) {
 
 //********************** BURGER MENU JQUERY *********************
 jQuery(document).ready(function ($) {
-	$('.header__burger').click(function (event) {
+	$('.header__burger, .header__menu-label').click(function (event) {
 		$('.header__burger,.header__menu').toggleClass('active');
 		$('body').toggleClass('lock');
 	});

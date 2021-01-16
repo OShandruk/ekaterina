@@ -1,9 +1,9 @@
 // Burger button color 
 $burgerColor:#fff;
-$burgerActiveColor: #fff;
-$bgMenuColor: #068292;
+$burgerActiveColor: #B98B4B;
+$bgMenuColor: #E5E5E5;
 
-	@media (max-width:992px){
+	
 	body.lock{
 		overflow: hidden;
 	}
@@ -14,8 +14,9 @@ $bgMenuColor: #068292;
 	.header__burger {
 		display:block;
 		position: relative;
-		width: 30px;
-		height: 20px;
+		width: 46px;
+		height: 23px;
+		cursor: pointer;
 		z-index: 10;
 	
 	}
@@ -25,8 +26,8 @@ $bgMenuColor: #068292;
 		position: absolute;
 		left: 0;
 		width: 100%;
-		height: 3px;
-		top: 9px;
+		height: 2px;
+		top: 11px;
 		transition: all 0.3s ease 0s;
 	}
 	.header__burger:before,
@@ -35,7 +36,7 @@ $bgMenuColor: #068292;
 		background-color: $burgerColor;
 		position: absolute;
 		width: 100%;
-		height: 3px;
+		height: 2px;
 		left: 0;
 		transition: all 0.3s ease 0s;
 	}
@@ -64,24 +65,39 @@ $bgMenuColor: #068292;
 
 	.header__menu {
 		position: fixed;
+		display: flex;
+		justify-content: center;
 		top: 0;
 		left: -100%;
-		width: 100%;
+		width: 40%;
 		height: 100%;
 		overflow: auto;
-		text-align: center;
 		transition: all 0.3s ease 0s;
 		background-color:$bgMenuColor;
-		padding:30px 10px 20px 10px;
+		padding:100px 10px 20px 10px;
 		z-index: 2;
 	}
 
 	.header__menu.active{
 		left: 0px;
+
+		.menu {
+			display: inline-flex;
+			flex-direction: column;
+			text-align: left;
+			align-items: flex-start;
+			padding-left: 100px;
+			li {
+
+			}
+
+			.header__link {
+				text-align: left;
+			}
+		}
 	}
 
 
 	.header__menu {
-		display: block;
+		
 	}
-}
