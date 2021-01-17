@@ -86,13 +86,30 @@ $bgMenuColor: #E5E5E5;
 			flex-direction: column;
 			text-align: left;
 			align-items: flex-start;
-			padding-left: 100px;
-			li {
+			&>li {
+				display: block;
+				width: 100%;
+				padding: 10px 10px 10px 10px;
+				border-bottom: 0.5px solid rgba(185, 139, 75, 0.8);
 
+				&:last-child {
+					border-bottom: none;
+				}
+
+
+			}
+			.submenu {
+				li {
+					padding: 10px 10px 10px 15px;
+				}
 			}
 
 			.header__link {
 				text-align: left;
+				font-size: 24px;
+				font-family: "Philosopher";
+				color: #B98B4B;
+
 			}
 		}
 	}

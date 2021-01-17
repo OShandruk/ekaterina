@@ -4041,11 +4041,28 @@ body.lock {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-left: 100px;
+}
+
+.header__menu.active .menu > li {
+  display: block;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  border-bottom: 0.5px solid rgba(185, 139, 75, 0.8);
+}
+
+.header__menu.active .menu > li:last-child {
+  border-bottom: none;
+}
+
+.header__menu.active .menu .submenu li {
+  padding: 10px 10px 10px 15px;
 }
 
 .header__menu.active .menu .header__link {
   text-align: left;
+  font-size: 24px;
+  font-family: "Philosopher";
+  color: #B98B4B;
 }
 
 /*HEADER
@@ -4083,6 +4100,12 @@ body.lock {
   font-size: 24px;
   font-family: "Philosopher";
   cursor: pointer;
+}
+
+.header__link {
+  font-size: 24px;
+  font-family: "Philosopher";
+  color: #B98B4B;
 }
 
 .header__logo {
@@ -4130,7 +4153,101 @@ body.lock {
   background: url(../img/header/main_bg.jpg) center/cover no-repeat; }
 
 .main__screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   height: 100vh;
+  padding-bottom: 10%;
+}
+
+.main__screen .main__screen-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main__screen .main__screen-btn {
+  font-family: "Philosopher";
+  font-size: 24px;
+  color: #FFFFFF;
+  padding: 15px 20px 15px 20px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin-bottom: 100px;
+}
+
+.main__screen .main__screen-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__screen .main__screen-form-item {
+  border-bottom: 1px solid #FFFFFF;
+  margin-right: 40px;
+}
+
+.main__screen .input__datepicker-wrap {
+  position: relative;
+}
+
+.main__screen .input__datepicker-wrap:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background: url(../img/icons/calendar.svg) no-repeat;
+  cursor: pointer;
+}
+
+.main__screen .input__datepicker {
+  position: relative;
+  font-family: "Philosopher";
+  background-color: transparent;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding: 0px 15px 0px 15px;
+}
+
+.main__screen .input__datepicker::-webkit-input-placeholder {
+  color: #FFFFFF;
+}
+
+.main__screen .input__datepicker::-moz-placeholder {
+  color: #FFFFFF;
+}
+
+.main__screen .input__datepicker:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.main__screen .input__datepicker::-ms-input-placeholder {
+  color: #FFFFFF;
+}
+
+.main__screen .input__datepicker::placeholder {
+  color: #FFFFFF;
 }
 
 @media (min-width: 991.98px) {

@@ -85,8 +85,63 @@ body {
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 
 .main__screen {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
 	height: 100vh;
 	background: url(../img/header/main_bg.jpg) center /cover no-repeat;
+	padding-bottom: 10%;
+	.main__screen-wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+
+
+	}
+	.main__screen-btn {
+		font-family:"Philosopher";
+		font-size: 24px;
+		color: #FFFFFF;
+		padding: 15px 20px 15px 20px;
+		background-color: rgba(255, 255, 255, 0.25);
+		margin-bottom: 100px;
+	}
+	.main__screen-form {
+		display: flex;
+
+	}
+
+	.main__screen-form-item {
+		border-bottom: 1px solid #FFFFFF;
+		margin-right: 40px;
+	}
+	.input__datepicker-wrap {
+		position: relative;
+		&:after {
+			content:'';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 24px;
+			height: 24px;
+			background: url(../img/icons/calendar.svg)  no-repeat;
+			cursor: pointer;
+		}
+	}
+	.input__datepicker {
+		position: relative;
+		font-family:"Philosopher";
+		background-color: transparent;
+		font-size: 24px;
+		color: #FFFFFF;
+		padding: 0px 15px 0px 15px;
+		&::placeholder{
+			color: #FFFFFF;
+		}
+		
+	}
 }
 
 
