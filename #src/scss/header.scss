@@ -3,6 +3,7 @@
 .header {
 	position: fixed;
 	width: 100%;
+	z-index: 2;
 
 }
 .header__content {
@@ -25,7 +26,25 @@
 	cursor: pointer;
 }
 .header__menu {
-
+	.header__menu-btn {
+		position: relative;
+		display: block;
+		margin-top: 30px;
+		font-family: "Philosopher";
+		font-size: 24px;
+		color: #B98B4B;
+		padding: 12px 35px 12px 35px;
+		border: 2px solid rgba(185, 139, 75, 0.8);
+		&:after {
+			content: '';
+			position: absolute;
+			top: 2px; left: 2px; bottom: 2px; right: 2px;
+			border: 0.5px solid rgba(185, 139, 75, 1);
+		}
+		&:hover:after {
+			opacity: 0;
+		}
+	}
 }
 .menu {
 }

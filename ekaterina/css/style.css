@@ -3945,7 +3945,7 @@ body.lock {
   width: 46px;
   height: 23px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 100;
 }
 
 .header__burger span {
@@ -3955,7 +3955,7 @@ body.lock {
   left: 0;
   width: 100%;
   height: 2px;
-  top: 11px;
+  top: 10px;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -4022,7 +4022,7 @@ body.lock {
   transition: all 0.3s ease 0s;
   background-color: #E5E5E5;
   padding: 100px 10px 20px 10px;
-  z-index: 2;
+  z-index: 99;
 }
 
 .header__menu.active {
@@ -4050,7 +4050,7 @@ body.lock {
   border-bottom: 0.5px solid rgba(185, 139, 75, 0.8);
 }
 
-.header__menu.active .menu > li:last-child {
+.header__menu.active .menu > li:nth-last-child(-n+2) {
   border-bottom: none;
 }
 
@@ -4071,6 +4071,7 @@ body.lock {
 .header {
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .header__content {
@@ -4100,6 +4101,31 @@ body.lock {
   font-size: 24px;
   font-family: "Philosopher";
   cursor: pointer;
+}
+
+.header__menu .header__menu-btn {
+  position: relative;
+  display: block;
+  margin-top: 30px;
+  font-family: "Philosopher";
+  font-size: 24px;
+  color: #B98B4B;
+  padding: 12px 35px 12px 35px;
+  border: 2px solid rgba(185, 139, 75, 0.8);
+}
+
+.header__menu .header__menu-btn:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  border: 0.5px solid #b98b4b;
+}
+
+.header__menu .header__menu-btn:hover:after {
+  opacity: 0;
 }
 
 .header__link {
@@ -4156,6 +4182,7 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -4168,6 +4195,7 @@ body.lock {
           justify-content: flex-end;
   height: 100vh;
   padding-bottom: 10%;
+  z-index: 1;
 }
 
 .main__screen .main__screen-wrap {
@@ -4193,17 +4221,27 @@ body.lock {
   padding: 15px 20px 15px 20px;
   background-color: rgba(255, 255, 255, 0.25);
   margin-bottom: 100px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main__screen .main__screen-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #B98B4B;
 }
 
 .main__screen .main__screen-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .main__screen .main__screen-form-item {
   border-bottom: 1px solid #FFFFFF;
   margin-right: 40px;
+  height: 40px;
 }
 
 .main__screen .input__datepicker-wrap {
@@ -4250,6 +4288,39 @@ body.lock {
   color: #FFFFFF;
 }
 
+.main__screen .section__btn {
+  position: relative;
+  font-family: "Philosopher";
+  background-color: transparent;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding: 12px 35px 12px 35px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main__screen .section__btn:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  border: 0.5px solid rgba(255, 255, 255, 0.8);
+}
+
+.main__screen .section__btn:hover {
+  background-color: white;
+  color: #B98B4B;
+  border: 1px solid #b98b4b;
+}
+
+.main__screen .section__btn:hover:after {
+  border: 1px solid #b98b4b;
+}
+
 @media (min-width: 991.98px) {
   .quantity__button:hover::before,
   .quantity__button:hover::after {
@@ -4258,11 +4329,6 @@ body.lock {
 }
 
 @media (min-width: 992px) {
-  .select__option:hover {
-    background: #d9d9d9;
-    color: #000;
-  }
-
   .checkbox a:hover {
     text-decoration: none;
   }
@@ -4270,10 +4336,6 @@ body.lock {
 
 @media (max-width: 991.98px) {
   .select__title {
-    font-size: 18px;
-  }
-
-  .select__options {
     font-size: 18px;
   }
 }

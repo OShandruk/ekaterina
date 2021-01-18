@@ -95,21 +95,13 @@
 		font-size: 24px;
 		font-family: "Philosopher";
 		padding: 10px 0px 5px 0px;
-		@media (max-width: $md2+px) {
-			font-size: 18px;
-		}
 	}
 	// .select__option
 	&__option {
 		cursor: pointer;
 		padding: 5px 15px;
 		margin: 0px 0px 0px 0px;
-		@media (min-width: 992px) {
-			&:hover {
-				background: #d9d9d9;
-				color: #000;
-			}
-		}
+		
 	}
 	&._active {
 		z-index: 5;
