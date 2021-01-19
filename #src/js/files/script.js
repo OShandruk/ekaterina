@@ -347,3 +347,21 @@ jQuery(document).ready(function ($) {
 });
 
 // ************************************************************************
+
+
+//*******************************  DATAPICKER***************************
+const  picker  =  datepicker ( '#datepicker01' ,  {  
+	position: 'tr'
+} )
+ const picker2 = datepicker('#datepicker02', {
+	position: 'tr'
+ })
+
+
+//************************** */  VIDEO  BG ***********************
+
+// jQuery(document).ready(function ($) {
+
+// 	$('.main__screen').vide('video/Hotel Room Tour');
+
+// });

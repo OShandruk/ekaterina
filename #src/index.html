@@ -7,7 +7,7 @@
 		<div class="wrapper">
 			@@include('_header.html',{})
 			<section class="main__screen">
-					<div class="_container">
+					<div class="_container flex__wrap">
 					<div class="main__screen-wrap">
 						
 							<a href="#" class="main__screen-btn">Watch full video</a>
@@ -21,10 +21,10 @@
 								</select>
 							</div>
 							<div class="main__screen-form-item input__datepicker-wrap">
-								<input type="text"  class="input__datepicker" placeholder="Arriving">
+								<input type="text" id="datepicker01"  class="input__datepicker" placeholder="Arriving">
 							</div>
 							<div class="main__screen-form-item input__datepicker-wrap">
-								<input type="text"  class="input__datepicker" placeholder="Leaving">
+								<input type="text" id="datepicker02" class="input__datepicker" placeholder="Leaving">
 							</div>
 							<div class="main__screen-form-item">
 								<select name="form[]" class="form">
@@ -45,6 +45,38 @@
 
 				</div>
 
+			</section>
+			<section class="weather">
+				<div class="_container">
+					<h2 class="weather__title">Right Now in Odessa</h2>
+					<div class="weather___row">
+						<div class="weather__column">
+							<div class="weather__item">
+								<div class="weather__item-title">09 November</div>
+								<div class="weather__item-subtitle">2020</div>
+							</div>
+						</div>
+						<div class="weather__column weather__line-column">
+							<div class="weather__line"></div>
+						</div>
+
+						<div class="weather__column">
+							<div class="weather__item">
+								<div class="weather__item-title">17:36</div>
+								<div class="weather__item-subtitle">pm</div>
+							</div>
+						</div>
+						<div class="weather__column weather__line-column">
+							<div class="weather__line"></div>
+						</div>
+						<div class="weather__column">
+							<div class="weather__item">
+								<div class="weather__item-title">23° C</div>
+								<div class="weather__item-subtitle">sunny</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 			
 			
