@@ -4027,6 +4027,49 @@ body.lock {
   z-index: 99;
 }
 
+.header__menu .mobile__order-lenguage {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.header__menu .mobile__order-lenguage .mobile__order-lenguage__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__menu .mobile__order-lenguage .mobile__order-lenguage__list > li {
+  margin-right: 15px;
+  position: relative;
+}
+
+.header__menu .mobile__order-lenguage .mobile__order-lenguage__list > li:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: -9px;
+  width: 1px;
+  height: 18px;
+  background-color: rgba(193, 193, 193, 0.7);
+}
+
+.header__menu .mobile__order-lenguage .mobile__order-lenguage__list > li:last-child:after {
+  display: none;
+}
+
+.header__menu .mobile__order-lenguage .mobile__order-lenguage__link {
+  font-family: "Philosopher";
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(193, 193, 193, 0.7);
+}
+
+.header__menu .mobile__order-lenguage .active {
+  color: #fff;
+}
+
 .header__menu.active {
   left: 0px;
 }
@@ -4056,7 +4099,7 @@ body.lock {
   border-bottom: none;
 }
 
-.header__menu.active .menu .submenu li {
+.header__menu.active .menu .submenu > li {
   padding: 10px 10px 10px 15px;
 }
 
@@ -4527,12 +4570,6 @@ body.lock {
   opacity: 0;
 }
 
-.header__link {
-  font-size: 24px;
-  font-family: "Philosopher";
-  color: #B98B4B;
-}
-
 .header__logo {
   display: inline-block;
   margin-top: 10px;
@@ -4545,6 +4582,15 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__mobile-btn {
+  display: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #4A4A4A;
 }
 
 .header__personal {
@@ -4859,6 +4905,82 @@ section {
     background-color: #6B6B6B;
   }
 
+  .header__burger.active {
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+  }
+
+  .header__burger.active:before {
+    background-color: #fff;
+    top: 18px;
+    width: 30px;
+    left: 5px;
+  }
+
+  .header__burger.active:after {
+    background-color: #fff;
+    bottom: 20px;
+    width: 30px;
+    left: 5px;
+  }
+
+  ._no-webp .header__menu{
+    background: #635F5B url(../img/header/menu__bg.png) right no-repeat; }
+
+  .header__menu {
+    width: 100%;
+  }
+
+  .header__menu .mobile__order-lenguage {
+    display: block;
+  }
+
+  .header__menu.active .menu {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .header__menu.active .menu > li {
+    border-bottom: none;
+    margin-bottom: 10px;
+  }
+
+  .header__menu.active .menu > li:nth-child(2) > a {
+    display: none;
+  }
+
+  .header__menu.active .menu .submenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .header__menu.active .menu .submenu > li {
+    position: relative;
+  }
+
+  .header__menu.active .menu .submenu > li:nth-child(1):after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: -4px;
+    width: 1px;
+    height: 30px;
+    background-color: #fff;
+  }
+
+  .header__menu.active .menu .header__link {
+    color: #fff;
+    text-align: center;
+  }
+
   .header {
     background-color: #fff;
     padding: 10px 0px 10px 0px;
@@ -4875,9 +4997,23 @@ section {
     display: none;
   }
 
+  .header__menu .header__menu-btn {
+    color: #fff;
+    padding: 12px 125px 12px 125px;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+  }
+
+  .header__menu .header__menu-btn:after {
+    border: 0.5px solid rgba(255, 255, 255, 0.8);
+  }
+
   .header__logo {
     -webkit-filter: brightness(0.1);
             filter: brightness(0.1);
+  }
+
+  .header__mobile-btn {
+    display: block;
   }
 
   .header__personal {
@@ -4893,4 +5029,25 @@ section {
   }
 }
 
+@media (max-width: 767.98px) {
+  .header__burger {
+    width: 30px;
+    height: 22px;
+  }
+
+  .header__logo img {
+    width: 131px;
+    height: 48px;
+  }
+
+  .header__mobile-btn {
+    font-size: 18px;
+  }
+}
+
 ._webp .main__screen{ background: url(../img/header/main_bg.webp) center/cover no-repeat; }
+
+@media (max-width: 991.98px){
+
+  ._webp .header__menu{ background: #635F5B url(../img/header/menu__bg.webp) right no-repeat; }
+}

@@ -20,6 +20,10 @@ $bgMenuColor: #E5E5E5;
 		height: 23px;
 		cursor: pointer;
 		z-index: 100;
+		@media (max-width:$md3+px) {
+			width: 30px;
+			height: 22px;
+		}
 	
 	}
 	.header__burger span{
@@ -34,6 +38,7 @@ $bgMenuColor: #E5E5E5;
 		@media (max-width:$md2+px) {
 			background-color:#6B6B6B;
 		}
+		
 	}
 	.header__burger:before,
 	.header__burger:after{
@@ -58,16 +63,36 @@ $bgMenuColor: #E5E5E5;
 	.header__burger.active span{
 		transform: scale(0);
 	}
-
+	.header__burger.active {
+		@media (max-width:$md2+px) {
+			width: 42px;
+			height: 42px;
+			border: 1px solid rgba(255, 255, 255, 0.4);;
+			border-radius: 50%;
+		}
+		
+	}
 	.header__burger.active:before{
 		transform:rotate(45deg);
 		top: 9px;
 		background-color:$burgerActiveColor;
+		@media (max-width:$md2+px) {
+			background-color: #fff;
+			top: 18px;
+			width: 30px;
+			left: 5px;
+		}
 	}
 	.header__burger.active:after{
 		transform:rotate(-45deg);
 		bottom: 9px;
 		background-color:$burgerActiveColor;
+		@media (max-width:$md2+px) {
+			background-color: #fff;
+			bottom: 20px;
+			width: 30px;
+			left: 5px;
+		}
 
 	}
 
@@ -84,6 +109,49 @@ $bgMenuColor: #E5E5E5;
 		background-color:$bgMenuColor;
 		padding:100px 10px 20px 10px;
 		z-index: 99;
+		@media (max-width:$md2+px) {
+			width: 100%;
+			background:#635F5B url(../img/header/menu__bg.png) right  no-repeat;
+		}
+
+		.mobile__order-lenguage {
+			display: none;
+			position: absolute;
+			top: 20px;
+			left: 30px;
+			.mobile__order-lenguage__list {
+				display: flex;
+				&>li {
+					margin-right: 15px;
+					position: relative;
+					&:after {
+						content:'';
+						position: absolute;
+						top: 1px;
+						right: -9px;
+						width: 1px;
+						height: 18px;
+						background-color: rgba(193, 193, 193, 0.7);
+					}
+					&:last-child:after {
+						display: none;
+					}
+				}
+			}
+			.mobile__order-lenguage__link {
+				font-family: "Philosopher";
+				font-size: 16px;
+				text-transform: uppercase;
+				color: rgba(193, 193, 193, 0.7);
+			}
+			.active {
+				color:#fff;
+			}
+			@media (max-width:$md2+px) {
+				display: block;
+			}
+		}
+
 	}
 
 	.header__menu.active{
@@ -94,11 +162,22 @@ $bgMenuColor: #E5E5E5;
 			flex-direction: column;
 			text-align: left;
 			align-items: flex-start;
+			@media (max-width:$md2+px) {
+				text-align: center;
+				align-items: center;
+			}
 			&>li {
 				display: block;
 				width: 100%;
 				padding: 10px 10px 10px 10px;
 				border-bottom: 0.5px solid rgba(185, 139, 75, 0.8);
+				@media (max-width:$md2+px) {
+					border-bottom: none;
+					margin-bottom: 10px;
+					&:nth-child(2)>a {
+						display: none;
+					}
+				}
 
 				&:nth-last-child(-n+2) {
 					border-bottom: none;
@@ -106,9 +185,27 @@ $bgMenuColor: #E5E5E5;
 
 
 			}
+			
 			.submenu {
-				li {
+				@media (max-width:$md2+px) {
+					display: flex;
+					justify-content: center;
+					
+				}
+				&>li {
 					padding: 10px 10px 10px 15px;
+					@media (max-width:$md2+px) {
+						position: relative;
+						&:nth-child(1):after {
+							content:'';
+							position: absolute;
+							top: 8px;
+    						right: -4px;
+							width: 1px;
+							height: 30px;
+							background-color:#fff;
+						}
+					}
 				}
 			}
 
@@ -117,6 +214,10 @@ $bgMenuColor: #E5E5E5;
 				font-size: 24px;
 				font-family: "Philosopher";
 				color: #B98B4B;
+				@media (max-width:$md2+px) {
+					color:#fff;
+					text-align: center;
+				}
 
 			}
 		}

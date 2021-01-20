@@ -44,23 +44,24 @@
 		color: #B98B4B;
 		padding: 12px 35px 12px 35px;
 		border: 2px solid rgba(185, 139, 75, 0.8);
+		@media (max-width:$md2+px) {
+			color: #fff;
+			padding: 12px 125px 12px 125px;
+			border: 2px solid rgba(255, 255, 255, 0.8);
+		}
 		&:after {
 			content: '';
 			position: absolute;
 			top: 2px; left: 2px; bottom: 2px; right: 2px;
 			border: 0.5px solid rgba(185, 139, 75, 1);
+			@media (max-width:$md2+px) {
+				border: 0.5px solid rgba(255, 255, 255, 0.8);
+			}
 		}
 		&:hover:after {
 			opacity: 0;
 		}
 	}
-}
-.menu {
-}
-.header__link {
-	font-size: 24px;
-	font-family: "Philosopher";
-	color: #B98B4B;
 }
 .header__logo {
 	display: inline-block;
@@ -68,12 +69,33 @@
 	@media (max-width:$md2+px) {
 		filter: brightness(0.1);
 	}
+	@media (max-width:$md3+px) {
+		img {
+			width: 131px;
+			height: 48px;
+		}
+	}
+
 	
 }
 
 .header__links-wrap {
 	display: flex;
 	align-items: center;
+}
+.header__mobile-btn {
+	display: none; 
+	font-style: normal;
+	font-weight: 500;
+	font-size: 26px;
+	text-transform: uppercase;	
+	color: #4A4A4A;
+	@media (max-width:$md2+px) {
+		display: block;
+	}
+	@media (max-width:$md3+px) {
+		font-size: 18px;
+	}
 }
 .header__personal {
 	display: inline-block;
