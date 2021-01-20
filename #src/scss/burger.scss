@@ -3,6 +3,8 @@ $burgerColor:#fff;
 $burgerActiveColor: #B98B4B;
 $bgMenuColor: #E5E5E5;
 
+
+
 	
 	body.lock{
 		overflow: hidden;
@@ -29,6 +31,9 @@ $bgMenuColor: #E5E5E5;
 		height: 2px;
 		top: 10px;
 		transition: all 0.3s ease 0s;
+		@media (max-width:$md2+px) {
+			background-color:#6B6B6B;
+		}
 	}
 	.header__burger:before,
 	.header__burger:after{
@@ -39,6 +44,9 @@ $bgMenuColor: #E5E5E5;
 		height: 2px;
 		left: 0;
 		transition: all 0.3s ease 0s;
+		@media (max-width:$md2+px) {
+			background-color:#6B6B6B;
+		}
 	}
 	.header__burger:before{
 		top: 0;

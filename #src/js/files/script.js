@@ -365,3 +365,4 @@ const  picker  =  datepicker ( '#datepicker01' ,  {
 // 	$('.main__screen').vide('video/Hotel Room Tour');
 
 // });
+

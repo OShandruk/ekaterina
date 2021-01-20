@@ -4849,6 +4849,48 @@ section {
   .select__title {
     font-size: 18px;
   }
+
+  .header__burger span {
+    background-color: #6B6B6B;
+  }
+
+  .header__burger:before,
+  .header__burger:after {
+    background-color: #6B6B6B;
+  }
+
+  .header {
+    background-color: #fff;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .header__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+
+  .header__menu-label {
+    display: none;
+  }
+
+  .header__logo {
+    -webkit-filter: brightness(0.1);
+            filter: brightness(0.1);
+  }
+
+  .header__personal {
+    display: none;
+  }
+
+  .header__cart {
+    display: none;
+  }
+
+  .header__order-lenguage {
+    display: none;
+  }
 }
 
 ._webp .main__screen{ background: url(../img/header/main_bg.webp) center/cover no-repeat; }
