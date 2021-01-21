@@ -47,7 +47,8 @@
 		font-size: 24px;
 		font-family: "Philosopher";
 		@media (max-width: $md2+px) {
-			font-size: 18px;
+			color: #4A4A4A;
+			justify-content: center;
 		}
 	}
 	// .select__value
@@ -74,6 +75,9 @@
 			width: 30px;
 			height: 22px;
 			background: url("../img/icons/arrow.svg") center / 100% no-repeat;
+			@media (max-width: $md2+px) {
+				background: url("../img/header/arrow_darck.svg") center / 100% no-repeat;
+			}
 		}
 	}
 	&__input {

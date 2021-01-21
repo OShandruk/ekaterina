@@ -366,3 +366,14 @@ const  picker  =  datepicker ( '#datepicker01' ,  {
 
 // });
 
+//*****************HIDE ARROW MAIN SCREEN */
+	$(window).scroll(function() {
+	if($(this).scrollTop() != 0) {
+		$('.main__screen-arrow').fadeOut();
+	} else {
+		$('.main__screen-arrow').fadeIn();
+		}
+	
+});
+
+

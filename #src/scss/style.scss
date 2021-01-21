@@ -97,6 +97,16 @@ section {
 	@media (max-width:1150px) {
 		min-height: 690px;
 	}
+	@media (max-width:$md2+px) {
+		min-height: 530px;
+		max-height: 600px;
+		
+	}
+	@media (max-width:$md3+px) {
+		min-height: 530px;
+		max-height: 530px;
+		
+	}
 	.main__screen-wrap {
 		position: absolute;
 		bottom: 15%;
@@ -111,9 +121,12 @@ section {
 		@media (max-width:1150px) {
 			bottom: 20px;
 		}
+		@media (max-width:$md2+px) {
+			bottom: -54%;
+		}
 
 	}
-	.main__screen-btn {
+	.main__screen-btn-top {
 		font-family:"Philosopher";
 		font-size: 24px;
 		color: #FFFFFF;
@@ -136,6 +149,11 @@ section {
 			flex-direction: column;
 			align-items: center;
 		}
+		@media (max-width:$md2+px) {
+			background-color: #fff;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+			padding: 30px 35px 30px 35px;
+		}
 
 	}
 
@@ -147,6 +165,9 @@ section {
 			margin-bottom: 30px;
 			margin-right: 0;
 			width: 100%;
+		}
+		@media (max-width:$md2+px) {
+			border-bottom: 1px solid #4A4A4A;
 		}
 	}
 	.input__datepicker-wrap {
@@ -160,6 +181,9 @@ section {
 			height: 24px;
 			background: url(../img/icons/calendar.svg)  no-repeat;
 			cursor: pointer;
+			@media (max-width:$md2+px) {
+				background: url(../img/header/calendar_darck.svg)  no-repeat;
+			}
 		}
 	}
 	.input__datepicker {
@@ -170,48 +194,116 @@ section {
 		font-size: 24px;
 		color: #FFFFFF;
 		padding: 0px 15px 0px 15px;
+		@media (max-width:$md2+px) {
+			color: #4A4A4A;
+		}
 		&::placeholder{
 			color: #FFFFFF;
+			@media (max-width:$md2+px) {
+				color: #4A4A4A;
+			}
 		}
 		
 	}
-	.section__btn {
-		position: relative;
-		font-family:"Philosopher";
-		background-color: transparent;
-		font-size: 24px;
-		color: #FFFFFF;
-		padding: 12px 35px 12px 35px;
-		border: 1px solid rgba(255, 255, 255, 0.8);
-		transition: all 0.3s ease;
+	
+	.main__screen-arrow {
+		position: absolute;
+		bottom: 8%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(0, -50%);
+		animation: arrow 2s infinite ease;
+		@media (max-width:1150px) {
+			display: none;
+		}
 		&:after {
-			content: '';
+			content:'';
 			position: absolute;
-			top: 2px; left: 2px; bottom: 2px; right: 2px;
-			border: 0.5px solid rgba(255, 255, 255, 0.8);;
+			top: 0;
+			left: 0;
+			width: 55px;
+			height: 25px;
+			background: url(../img/header/big_arrow.svg) center no-repeat;
 		}
-		&:hover {
-			background-color: rgba(255, 255, 255, 1);
-			color: #B98B4B;
-			border: 1px solid rgba(185, 139, 75, 1);
-		}
-		&:hover:after {
-			border: 1px solid rgba(185, 139, 75, 1);
-		}
+	}
 
-		@media (max-width:1153px) {
-			margin-top: 20px;
-		}
-
+	@keyframes arrow{
+		0%{bottom: 4%;}
+		50%{bottom: 8%;}
+		100%{bottom: 4%;}
+	}
+}
+.white-space__section {
+	display: none;
+	height: 210px;
+	background-color: #F4F2F0;
+	@media (max-width:$md2+px) {
+		display: block;
 	}
 }
 
+
+.main__screen-btn {
+	position: relative;
+	color: #FFFFFF;
+	@media (max-width:$md2+px) {
+		color: #4A4A4A;
+		border: 1px solid rgba(74, 74, 74, 0.8);
+		padding: 12px 45px 12px 45px;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 2px; left: 2px; bottom: 2px; right: 2px;
+		border: 0.5px solid rgba(255, 255, 255, 0.8);
+		@media (max-width:$md2+px) {
+			border: 0.5px solid rgba(74, 74, 74, 0.8);
+		}
+	}
+
+	@media (max-width:1153px) {
+		margin-top: 20px;
+	}
+
+}
+
+.section__btn {
+	display: inline-block;
+	position: relative;
+	font-family:"Philosopher";
+	background-color: transparent;
+	font-size: 24px;
+	color: #FFFFFF;
+	padding: 12px 35px 12px 35px;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	transition: all 0.3s ease;
+	
+	&:after {
+		content: '';
+		position: absolute;
+		top: 2px; left: 2px; bottom: 2px; right: 2px;
+		border: 0.5px solid rgba(255, 255, 255, 0.8);
+	}
+	&:hover {
+		background-color: rgba(255, 255, 255, 1);
+		color: #B98B4B;
+		border: 1px solid rgba(185, 139, 75, 1);
+	}
+	&:hover:after {
+		border: 1px solid rgba(185, 139, 75, 1);
+	}
+}
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 /*WEATHER
 ==============================================================*/
 .weather {
+	@media (max-width:$md2+px) {
+		padding-top:150px;
+	}
+	
 }
 
 .weather__title {
@@ -221,21 +313,36 @@ section {
 	text-transform: uppercase;
 	color: #343434;
 	margin-bottom: 55px;
+	@media (max-width:$md3+px) {
+		display: none;
+	}
 }
 .weather___row {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@media (max-width:$md3+px) {
+		flex-direction: column;
+
+	}
 }
 .weather__column {
 	position: relative;
 	flex: 0 1 20%;
+	@media (max-width:$md3+px) {
+		padding: 10px 0px 10px 0px;
+	}
 	
 }
 .weather__line {
 		width: 100%;
 		height: 2px;
 		background-color:#B98B4B;
+		@media (max-width:$md3+px) {
+			width: 2px;
+			height: 30px;
+			
+		}
 }
 
 .weather__item {
@@ -251,6 +358,7 @@ section {
 	font-size: 32px;
 	color: #353535;
 	margin-bottom: 5px;
+	
 }
 .weather__item-subtitle {
 	font-family:"Philosopher";
@@ -258,7 +366,86 @@ section {
 	color: #838383;
 }
 
+.weather__content {
+	display: none;
+	margin-top: 20px;
 
-
-
+	.weather__content-title {
+		font-family:"CormorantGaramond";
+		font-size: 27px;
+		text-transform: uppercase;
+		text-align: center;
+		color: #000000;
+		margin-bottom: 10px;
+	}
+	.weather__content-text {
+		font-family:"Philosopher";
+		font-size: 14px;
+		line-height: 18px;
+		text-align: center;
+		color: #000000;
+	}
+	@media (max-width:$md3+px) {
+		display: block;
+	}
+}
 /*=====================================================================*/
+
+
+/*HOTELS
+======================================================*/
+.hotels {
+	display: flex;
+	@media (max-width:$md2+px) {
+		flex-direction: column;
+	}
+}
+.hotels__column {
+	flex: 0 1 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 150px 50px 150px 50px ;
+	@media (max-width:$md2+px) {
+		flex: 0 1 100%;
+	}
+	@media (max-width:$md4+px) {
+		padding: 100px 20px 100px 20px ;
+	}
+}
+.hotels__column-left {
+	background:  left /contain no-repeat url(../img/hotels/left__pattern.png), center /cover no-repeat url(../img/hotels/01.jpg);
+}
+.hotels__column-title {
+	font-family:"Philosopher";
+	font-size: 48px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 30px;
+	@media (max-width:$md4+px) {
+		font-size: 36px;
+	}
+}
+.hotels__column-subtitle {
+	font-family:"Philosopher";
+	font-size: 24px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-bottom: 190px;
+	@media (max-width:$md4+px) {
+		font-size: 18px;
+	}
+}
+.hotels__column-btn {
+	padding: 14px 75px 14px 75px;
+}
+
+.hotels__column-right {
+	background:  right /contain no-repeat url(../img/hotels/right_pattern.png), center /cover no-repeat url(../img/hotels/02.jpg);
+}
+
+
+
+
+
+/*=======================================================*/

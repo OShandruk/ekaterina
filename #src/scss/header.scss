@@ -109,6 +109,10 @@
 		width: 42px;
 		height: 42px;
 		background: url(../img/header/human.svg) center no-repeat;
+		transition: all 0.3s ease;
+	}
+	&:hover:after {
+		filter:brightness(0.6);
 	}
 	@media (max-width:$md2+px) {
 		display: none;
@@ -126,6 +130,9 @@
 		width: 42px;
 		height: 42px;
 		background: url(../img/header/cart.svg) center no-repeat;
+	}
+	&:hover:after {
+		filter:brightness(0.6);
 	}
 	@media (max-width:$md2+px) {
 		display: none;

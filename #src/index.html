@@ -6,11 +6,12 @@
 	<body>
 		<div class="wrapper">
 			@@include('_header.html',{})
+			<!--==================== MAIN SCREEN ======================= -->
 			<section class="main__screen">
 					<div class="_container flex__wrap">
 					<div class="main__screen-wrap">
 						
-							<a href="#" class="main__screen-btn">Watch full video</a>
+							<a href="#" class="main__screen-btn-top">Watch full video</a>
 
 						<div  class="main__screen-form">
 							<div class="main__screen-form-item">
@@ -36,7 +37,7 @@
 								</select>
 							</div>
 
-							<button class="section__btn">Search</button>
+							<button class="main__screen-btn section__btn ">Search</button>
 
 						</div>
 				
@@ -44,8 +45,15 @@
 					
 
 				</div>
+				<div class="main__screen-arrow"></div>
 
+				
+				
 			</section>
+			<!--==================== WHITE SPACE ======================= -->
+			<section class="white-space__section"></section>
+
+			<!--==================== WEATHER ======================= -->
 			<section class="weather">
 				<div class="_container">
 					<h2 class="weather__title">Right Now in Odessa</h2>
@@ -76,6 +84,26 @@
 							</div>
 						</div>
 					</div>
+					<div class="weather__content">
+						<h2 class="weather__content-title">Welcome to odessa</h2>
+						<p class="weather__content-text">
+							We provide best hospitality and services within our two hotels, both placed in the heart of historical district of the city.
+						</p>
+					</div>
+						
+				</div>
+			</section>
+			<!--==================== HOTELS ======================= -->
+			<section class="hotels">
+				<div class="hotels__column hotels__column-left">
+					<h2 class="hotels__column-title">Hotel Ekaterina</h2>
+					<h3 class="hotels__column-subtitle">Grecheskaya street</h3>
+					<a href="#" class="hotels__column-btn section__btn">Details</a>
+				</div>
+				<div class="hotels__column hotels__column-right">
+					<h2 class="hotels__column-title">Hotel Ekaterina II</h2>
+					<h3 class="hotels__column-subtitle">Yekaterininskaya squ</h3>
+					<a href="#" class="hotels__column-btn section__btn">Details</a>
 				</div>
 			</section>
 			
