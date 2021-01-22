@@ -396,6 +396,7 @@ section {
 ======================================================*/
 .hotels {
 	display: flex;
+	padding: 0px;
 	@media (max-width:$md2+px) {
 		flex-direction: column;
 	}
@@ -444,8 +445,108 @@ section {
 	background:  right /contain no-repeat url(../img/hotels/right_pattern.png), center /cover no-repeat url(../img/hotels/02.jpg);
 }
 
-
-
-
-
 /*=======================================================*/
+
+/*LOCATION
+============================================================*/
+.location {
+	background-color: #FCFBFA;
+}
+.location__row {
+	display: flex;
+}
+.location__column {
+}
+.location__column-text {
+	flex: 0 1 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	.location__column-text-wrap {
+		width: 53%;
+	}
+	
+	
+}
+.column__title {
+	font-size: 48px;
+	line-height: 67px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.9);
+}
+.location__column-title {
+	margin-bottom: 210px;
+}
+.location__column-item {
+	position: relative;
+	font-family:"Philosopher";
+	letter-spacing: 0.02em;
+	margin-bottom: 70px;
+}
+.location__column-item-title {
+	font-size: 36px;
+	
+	color: #4F4F4F;
+	margin-bottom: 15px;
+}
+.location__column-item-phone {
+	display: inline-block;
+	font-size: 24px;
+	color: #4F4F4F;
+	margin-bottom: 10px;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+.location__column-item-address {
+	font-size: 24px;
+	color: #4F4F4F;
+}
+.location__dotted {
+	position: absolute;
+	top: 45px;
+	right: 20px;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	background: rgba(185, 139, 75, 0.3);
+	cursor: pointer;
+	&:after {
+		content:'';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background: rgba(185, 139, 75, 0.6);
+	}
+}
+.location__column-map {
+	flex: 0 1 70%;
+	.location__column-map-wrap {
+		position: relative;
+		width: 100%;
+		height: 70%;
+	}
+	img {
+		width: 100%;
+		height: 100;
+  		object-fit: contain; 
+	}
+	// background: url(../img/location/map.png) center /cover  no-repeat;
+}
+.location__dotted-map1 {
+	top: 200px;
+	left: 300px;
+}
+.location__dotted-map2 {
+}
+
+
+
+
+/*=========================================================*/
