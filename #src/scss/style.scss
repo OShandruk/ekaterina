@@ -76,6 +76,9 @@ body {
 @import "ui";
 @import "burger";
 @import "datepicker";
+@import "leader-line";
+@import "tippy";
+
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 
@@ -454,16 +457,24 @@ section {
 }
 .location__row {
 	display: flex;
+	@media (max-width:$md2+px) {
+		flex-direction: column;
+	}
 }
 .location__column {
 }
 .location__column-text {
-	flex: 0 1 30%;
+	flex: 0 1 35%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+	padding-left: 5%;
 	.location__column-text-wrap {
-		width: 53%;
+		.location__column-item {
+			@media (max-width:$md2+px) {
+				display: none;
+			}
+		}
 	}
 	
 	
@@ -476,25 +487,66 @@ section {
 	color: rgba(0, 0, 0, 0.9);
 }
 .location__column-title {
+	padding: 0px 10px 0px 10px;
 	margin-bottom: 210px;
+	@media (max-width:1365px) {
+		margin-bottom: 120px;
+	}
+	@media (max-width:1168px) {
+		margin-bottom: 100px;
+	}
+	@media (max-width:$md2+px) {
+		margin-bottom: 20px;
+	}
+	@media (max-width:$md4+px) {
+		font-size: 24px;
+		line-height: 138.6%;
+	}
+
+
 }
 .location__column-item {
 	position: relative;
 	font-family:"Philosopher";
 	letter-spacing: 0.02em;
+
 	margin-bottom: 70px;
+	@media (max-width:$md2+px) {
+		padding: 15px 0px 15px 30px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		margin-bottom: 0px;
+		color: #fff;
+		background: #635F5B;
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+	}
+	@media (max-width:$md4+px) {
+		padding: 15px 0px 15px 10px;
+	}
 }
 .location__column-item-title {
 	font-size: 36px;
-	
 	color: #4F4F4F;
 	margin-bottom: 15px;
+	@media (max-width:$md2+px) {
+		color: #fff;
+	}
+	@media (max-width:$md3+px) {
+		font-size: 18px;
+	}
 }
 .location__column-item-phone {
 	display: inline-block;
 	font-size: 24px;
 	color: #4F4F4F;
 	margin-bottom: 10px;
+	@media (max-width:$md2+px) {
+		color: #fff;
+	}
+	@media (max-width:$md3+px) {
+		font-size: 12px;
+	}
 	&:hover {
 		text-decoration: underline;
 	}
@@ -502,6 +554,12 @@ section {
 .location__column-item-address {
 	font-size: 24px;
 	color: #4F4F4F;
+	@media (max-width:$md2+px) {
+		color: #fff;
+	}
+	@media (max-width:$md3+px) {
+		font-size: 12px;
+	}
 }
 .location__dotted {
 	position: absolute;
@@ -527,26 +585,76 @@ section {
 }
 .location__column-map {
 	flex: 0 1 70%;
+	
 	.location__column-map-wrap {
 		position: relative;
+		display: block;
 		width: 100%;
-		height: 70%;
+		height: 0;
+		padding-bottom: 100%;
+		overflow: hidden;
 	}
 	img {
+		position: absolute;
+		display: block;
 		width: 100%;
-		height: 100;
-  		object-fit: contain; 
+		height: auto;
+		top: 0; // выставляем видимый участок карты
+		left: 0;
 	}
 	// background: url(../img/location/map.png) center /cover  no-repeat;
 }
 .location__dotted-map1 {
-	top: 200px;
-	left: 300px;
+	top: 30%;
+	left: 35%;
+	
 }
 .location__dotted-map2 {
+	top: 62%;
+	left: 57%;
+}
+.location__tooltip1 {
+	display: block;
+	
+
+	
+}
+.location__tooltip-text {
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+	font-family:"Philosopher";
+	font-size: 18px;
+	letter-spacing: 0.02em;
+	text-transform: capitalize;
+	color: #373737;
+}
+.location__tooltip2 {
+	display: block;
 }
 
-
-
+.location__column-text-mobile {
+	display: none;
+	@media (max-width:$md2+px) {
+		display: block;
+	}
+}
+.location__column-item-text {
+	flex: 0 1 50%;
+	margin-right: 20px;
+}
+.location__column-item-img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	@media (max-width:$md4+px) {
+		width: 150px;
+	}
+	
+}
+.leader-line {
+	@media (max-width:$md2+px) {
+		display: none;
+	}
+}
 
 /*=========================================================*/

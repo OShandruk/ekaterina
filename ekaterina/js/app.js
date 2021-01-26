@@ -1573,7 +1573,45 @@ function scroll_animate(event) {
 // });
 
 
-// *****************************************************************************************
+
+
+
+
+// **************************leader-line***********************************
+var startElement = document.getElementById('location__dotted-start1'),
+	 endElement = document.getElementById('location__dotted-end1');
+new LeaderLine(startElement, endElement, {
+	color: '#B98B4B', 
+	size: 2,
+	dash:true,
+	endPlug:'behind',
+});
+var startElement2 = document.getElementById('location__dotted-start2'),
+	 endElement2 = document.getElementById('location__dotted-end2');
+new LeaderLine(startElement2, endElement2, {
+	color: '#B98B4B', 
+	size: 2,
+	dash:true,
+	endPlug:'behind',
+});
+
+
+//******************************* */ TOOLTIP***************************
+
+const location1 = document.getElementById('location__tooltip1');
+const location2 = document.getElementById('location__tooltip2');
+tippy('.location__dotted-map1', {
+	content: location1,
+	placement: 'top',
+	
+ });
+ tippy('.location__dotted-map2', {
+	content: location2,
+	placement: 'top',
+	
+ });
+
+
 
 
 // *********************** JQUERY SCRIPTS **************************************************
