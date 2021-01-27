@@ -84,9 +84,11 @@ tippy('.location__dotted-map1', {
 
 //*********************** */ SLIDERS*****************************************
 var swiper = new Swiper('.party__slider', {
+
 	pagination: {
-	  el: '.swiper-pagination',
-	},
+        el: '.swiper-pagination',
+        clickable: true,
+    },
  });
 
 // *********************** JQUERY SCRIPTS **************************************************
