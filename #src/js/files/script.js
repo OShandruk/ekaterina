@@ -71,16 +71,23 @@ const location2 = document.getElementById('location__tooltip2');
 tippy('.location__dotted-map1', {
 	content: location1,
 	placement: 'top',
+	touch: false,
 	
  });
  tippy('.location__dotted-map2', {
 	content: location2,
 	placement: 'top',
+	touch: false,
 	
  });
 
 
-
+//*********************** */ SLIDERS*****************************************
+var swiper = new Swiper('.party__slider', {
+	pagination: {
+	  el: '.swiper-pagination',
+	},
+ });
 
 // *********************** JQUERY SCRIPTS **************************************************
 
@@ -376,12 +383,11 @@ jQuery(document).ready(function () {
 
 jQuery(document).ready(function ($) {
 
-	$(".tabs-item").not(":first").hide();
-	$(".tabs-nav__item").click(function () {
-		$(".tabs-nav__item").removeClass("active").eq($(this).index()).addClass("active");
-		$(".tabs-item").hide().eq($(this).index()).fadeIn()
+	$(".location__column-item-mobile").not(":first").hide();
+	$(".location__dotted").click(function () {
+		$(".location__dotted").removeClass("active").eq($(this).index()).addClass("active");
+		$(".location__column-item-mobile").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
-
 });
 
 // ************************************************************************
