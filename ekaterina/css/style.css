@@ -6414,6 +6414,108 @@ section {
 
 /*===============================================*/
 
+/*SERVICE
+======================================================*/
+
+.service__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.service_column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+._no-webp .service__column-content{
+  background: url(../img/service/pattern.png) left center no-repeat; }
+
+.service__column-content {
+  padding-left: 10%;
+  padding-right: 30px;
+}
+
+.service__column-title {
+  color: #B6823A;
+  margin-bottom: 33px;
+}
+
+.service__column-text {
+  font-family: "CormorantGaramond";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2E2E2E;
+  margin-bottom: 80px;
+}
+
+.service__column-text p {
+  margin-bottom: 30px;
+}
+
+.service__column-list {
+  padding-left: 30px;
+}
+
+.service__column-list-item {
+  position: relative;
+  font-family: "Philosopher";
+  padding-left: 20px;
+}
+
+.service__column-list-item:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: url(../img/service/list__dot.svg) center no-repeat;
+}
+
+.service__column-gallery {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.service__gallery-img-item {
+  margin-left: 46px;
+  margin-bottom: 46px;
+}
+
+.service__gallery-img--1 {
+  margin-left: 0px;
+}
+
+.service__gallery-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.service__gallery-img--3 {
+  margin-left: 0px;
+}
+
+.service__gallery-img--5 {
+  margin-left: 0px;
+}
+
+/*===========================================================*/
+
 @media (min-width: 991.98px) {
   .quantity__button:hover::before,
   .quantity__button:hover::after {
@@ -7003,6 +7105,8 @@ section {
 ._webp .party__column-text{ background: url(../img/party/Pattern.webp) right no-repeat; }
 
 ._webp .rooms{ background: #635F5B url(../img/rooms/rooms_bg.webp) right no-repeat; }
+
+._webp .service__column-content{ background: url(../img/service/pattern.webp) left center no-repeat; }
 
 @media (max-width: 991.98px){
 
