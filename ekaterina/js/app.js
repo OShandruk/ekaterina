@@ -1616,11 +1616,26 @@ tippy('.location__dotted-map1', {
 
 //*********************** */ SLIDERS*****************************************
 var swiper = new Swiper('.party__slider', {
-
 	pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
+ });
+ var swiper1 = new Swiper('.rooms__slider', {
+	loop: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	centeredSlides: true,
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	 },
+	 breakpoints: {
+		992: {
+			slidesPerView: 3,
+			spaceBetween: 100,
+		},
+	 }
  });
 
 // *********************** JQUERY SCRIPTS **************************************************
