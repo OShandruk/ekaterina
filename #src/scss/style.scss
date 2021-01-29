@@ -74,11 +74,11 @@ body {
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 @import "forms";
 @import "ui";
-@import "burger";
 @import "datepicker";
 @import "leader-line";
 @import "tippy";
 @import "swiper";
+@import "burger";
 
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
@@ -1051,20 +1051,30 @@ section {
 }
 .service__row {
 	display: flex;
+	flex-wrap: wrap;
 }
 .service_column {
 	flex: 0 1 50%;
+	@media (max-width:1772px) {
+		flex: 0 1 100%;
+	}
 }
 .service__column-content {
 	padding-left: 10%;
 	padding-right: 30px;
 	background: url(../img/service/pattern.png) left center no-repeat;
+	@media (max-width:$md4+px) {
+		padding: 0px 20px 0px 20px;
+	}
+	
 }
 .service__column-title {
 	color: #B6823A;
 	margin-bottom: 33px;
-}
-.column__title {
+	@media (max-width:$md4+px) {
+		font-size: 33px;
+		line-height: 40px;
+	}
 }
 .service__column-text {
 	font-family:"CormorantGaramond";
@@ -1073,8 +1083,12 @@ section {
 	font-size: 24px;
 	line-height: 29px;
 	color: #2E2E2E;
-
 	margin-bottom: 80px;
+	@media (max-width:$md4+px) {
+		font-size: 18px;
+		line-height: 24px;
+		margin-bottom: 40px;
+	}
 	p {
 		margin-bottom: 30px;
 	}
@@ -1096,15 +1110,38 @@ section {
 		background: url(../img/service/list__dot.svg) center  no-repeat;
 	}
 }
+
+.service__mobile-img {
+	display: none;
+	margin-bottom: 15px;
+	width: 100%;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	@media (max-width:$md4+px) {
+		display: block;
+	}
+}
 .service__column-gallery {
 	flex: 0 0 50%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
+	@media (max-width:1772px) {
+		justify-content: center;
+	}
+	@media (max-width:$md4+px) {
+		display: none;
+	}
 }
 .service__gallery-img-item {
 	margin-left: 46px;
 	margin-bottom: 46px;
+	@media (max-width:700px) {
+		margin-left: 0px;
+	}
 }
 .service__gallery-img--1 {
 	margin-left: 0px;
@@ -1118,6 +1155,9 @@ section {
 }
 .service__gallery-img--3 {
 	margin-left: 0px;
+	@media (max-width:1772px) {
+		margin-left: 46px;
+	}
 }
 .service__gallery-img--4 {
 }
