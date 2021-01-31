@@ -106,6 +106,12 @@ var swiper = new Swiper('.party__slider', {
 	 }
  });
 
+ var swiper3 = new Swiper('.reviews__slider', {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	centeredSlides: true,
+	loop: true,
+ });
 // *********************** JQUERY SCRIPTS **************************************************
 
 // function ibg(){
