@@ -1,5 +1,107 @@
-footer{}
-//====================================================================================================
 
 //====================================================================================================
+/*FOOTER
+=======================================================*/
+.footer {
+   font-family:"Philosopher";
+   color: #FFFFFF;
+}
+.footer__content {
+   padding:113px 150px 150px 130px;
+   display: flex;
+   justify-content: space-between;
+   background: url(../img/footer/footer__bg.png) left -130px center no-repeat rgba(185, 139, 75, 0.67);
+   @media (max-width:1200px) {
+      padding:113px 70px 150px 70px;
+   }
+   @media (max-width:$md2+px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      padding:50px 70px 50px 70px;
+   }
+   @media (max-width:$md4+px){
+      padding:50px 20px 50px 20px;
+   }
+}
 
+.footer__column {
+   flex: 0 1 25%;
+   @media (max-width:$md2+px){
+      padding-bottom: 25px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid  #fff;
+      width: 100%;
+   }
+}
+.footer__nav {
+}
+.footer__column-title {
+   font-size: 36px;
+   text-transform: uppercase;
+   margin-bottom: 36px;
+}
+.footer__nav-list {
+   li {
+      margin-bottom: 15px;
+   }
+}
+.footer__nav-link {
+   font-size: 24px;
+   line-height: 24px;
+   text-transform: capitalize;
+   color: #FFFFFF;
+}
+.footer__contacts {
+}
+.footer__contacts-list {
+}
+.footer__contacts-item {
+   font-size: 24px;
+   line-height: 30px;
+   text-transform: capitalize;
+   margin-bottom: 30px;
+}
+.footer__tel {
+   font-size: 24px;
+   color: #FFFFFF;
+   
+}
+.footer__column-logo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.footer__logo {
+   margin-bottom: 65px;
+}
+.footer__mobile-text {
+   display: none;
+   font-size: 24px;
+   margin-bottom: 15px;
+   @media (max-width:$md2+px) {
+      display: block;
+   }
+}
+
+.footer__mobile-link {
+   display: none;
+   font-size: 22px;
+   color:#FFF;
+   margin-bottom: 15px;
+   @media (max-width:$md2+px) {
+      display: block;
+   }
+}
+.footer__social-list {
+   display: flex;
+   align-items: center;
+   li {
+      margin-right: 50px;
+      &:last-child {
+         margin-right: 0;
+      }
+   }
+}
+.footer__social-link {
+}
+/*=======================================================*/

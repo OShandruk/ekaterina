@@ -107,10 +107,20 @@ var swiper = new Swiper('.party__slider', {
  });
 
  var swiper3 = new Swiper('.reviews__slider', {
-	slidesPerView: 3,
-	spaceBetween: 30,
+	slidesPerView: 1,
+	spaceBetween: 0,
 	centeredSlides: true,
 	loop: true,
+	breakpoints: {
+		991.98: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		1400: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+	 }
  });
 // *********************** JQUERY SCRIPTS **************************************************
 
@@ -127,14 +137,14 @@ var swiper = new Swiper('.party__slider', {
 // *FIXED HEADER
 // ******************************************************
 
-// $(window).scroll(function() {
-// if ($(this).scrollTop() > 1){
-// $('.header__fix-wrap').addClass("fix__header");
-// }
-// else{
-// $('.header__fix-wrap').removeClass("fix__header");
-// }
-// });
+$(window).scroll(function() {
+if ($(this).scrollTop() > 1){
+$('.header').addClass("fix__header");
+}
+else{
+$('.header').removeClass("fix__header");
+}
+});
 
 // END fixed HEADER
 

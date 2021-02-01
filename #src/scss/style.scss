@@ -78,13 +78,14 @@ body {
 @import "leader-line";
 @import "tippy";
 @import "swiper";
-@import "burger";
+
 
 
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 @import "header";
+@import "burger";
 @import "footer";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
@@ -1179,6 +1180,8 @@ section {
 
 
 .reviews__slider {
+	padding-top: 15px;
+	height: auto;
 	.swiper-wrapper {
 		
 	}
@@ -1190,22 +1193,32 @@ section {
 .swiper-wrapper {
 }
 .swiper-slide {
+	padding-right: 10px;
+	padding-left: 10px;
 }
 .reviews__item {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	
-	
 }
 .reviews__item-wrap {
 	display: flex;
 	align-items: flex-start;
-	box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.1);	
+	box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.1);	
 	padding: 25px;
+	@media (max-width:$md4+px) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 }
 .reviews__item-img {
 	margin-right: 30px;
+	@media (max-width:$md4+px) {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
 }
 .reviews__item-content {
 	font-family:"CormorantGaramond";
@@ -1214,6 +1227,8 @@ section {
 .reviews__item-title {
 	font-size: 24px;
 	margin-bottom: 16px;
+	font-weight: 600;
+	color:#000;
 }
 .reviews__item-text {
 	font-size: 20px;
@@ -1247,7 +1262,7 @@ section {
 		left: 0;
 		width: 25px;
 		height: 25px;
-		background: url(../img/review/star_color.svg) center  no-repeat;
+		background: url(../img/review/star-color.svg) center  no-repeat;
 	}
 }
 .white-stars {
@@ -1260,7 +1275,7 @@ section {
 		left: 0;
 		width: 25px;
 		height: 25px;
-		background: url(../img/review/star.svg) center  no-repeat;
+		background: url(../img/review/star-white.svg) center  no-repeat;
 	}
 }
 
