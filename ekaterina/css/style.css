@@ -2197,6 +2197,54 @@ button.swiper-pagination-bullet {
   transition: all 0.3s ease;
 }
 
+/*WHITE HEADER
+=======================================================*/
+
+.white__header {
+  background-color: #fff;
+  padding-bottom: 10px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.white__header .header__menu-label {
+  color: #6B6B6B;
+}
+
+.white__header .header__logo {
+  display: inline-block;
+  margin-top: 10px;
+  -webkit-filter: brightness(0.1);
+          filter: brightness(0.1);
+}
+
+.white__header .header__burger span {
+  background-color: #6B6B6B;
+}
+
+.white__header .header__burger:before,
+.white__header .header__burger:after {
+  background-color: #6B6B6B;
+}
+
+.white__header .header__personal,
+.white__header .header__cart {
+  -webkit-filter: brightness(0.1);
+          filter: brightness(0.1);
+}
+
+.white__header .select__value {
+  color: #6B6B6B;
+}
+
+.white__header .select__value:before {
+  -webkit-filter: brightness(0.1);
+          filter: brightness(0.1);
+}
+
+/*========================================================*/
+
 /*FIXED HEADER
 =============================================*/
 
@@ -2222,6 +2270,9 @@ button.swiper-pagination-bullet {
 .fix__header .header__logo img {
   width: 131px;
   height: 48px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .fix__header .header__burger span {
@@ -3754,6 +3805,40 @@ section {
 }
 
 /*=======================================================*/
+
+/*TO TOP
+====================================================*/
+
+.to__top {
+  width: 70px;
+  height: 50px;
+  background: #B98B4B;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+.to__top:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: url(../img/footer/top.svg) center no-repeat;
+}
+
+/*===================================================*/
 
 @media (min-width: 991.98px) {
   .quantity__button:hover::before,

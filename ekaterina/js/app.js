@@ -1578,17 +1578,17 @@ function scroll_animate(event) {
 
 
 // **************************leader-line***********************************
-var startElement = document.getElementById('location__dotted-start1'),
-	 endElement = document.getElementById('location__dotted-end1');
-new LeaderLine(startElement, endElement, {
+const startElement = document.getElementById('location__dotted-start1');
+const	 endElement = document.getElementById('location__dotted-end1');
+var line1 = new LeaderLine(startElement, endElement, {
 	color: '#B98B4B', 
 	size: 2,
 	dash:true,
 	endPlug:'behind',
 });
-var startElement2 = document.getElementById('location__dotted-start2'),
-	 endElement2 = document.getElementById('location__dotted-end2');
-new LeaderLine(startElement2, endElement2, {
+const startElement2 = document.getElementById('location__dotted-start2');
+const endElement2 = document.getElementById('location__dotted-end2');
+var line2 = new LeaderLine(startElement2, endElement2, {
 	color: '#B98B4B', 
 	size: 2,
 	dash:true,
@@ -1654,6 +1654,8 @@ var swiper = new Swiper('.party__slider', {
 		},
 	 }
  });
+
+
 // *********************** JQUERY SCRIPTS **************************************************
 
 // function ibg(){
@@ -1898,29 +1900,18 @@ jQuery(document).ready(function ($) {
 
 // ********************toTOP************************
 
-// $(function() {
-
-// $(window).scroll(function() {
-
-// if($(this).scrollTop() != 0) {
-
-// $('#toTop').fadeIn();
-
-// } else {
-
-// $('#toTop').fadeOut();
-
-// }
-
-// });
-
-// $('#toTop').click(function() {
-
-// $('body,html').animate({scrollTop:0},800);
-
-// });
-
-// });
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('.to__top').fadeIn();
+} else {
+$('.to__top').fadeOut();
+}
+});
+$('.to__top').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+});
 // ******************** END ToTOP************************
 
 
@@ -1959,12 +1950,12 @@ jQuery(document).ready(function ($) {
 
 
 //*******************************  DATAPICKER***************************
-const  picker  =  datepicker ( '#datepicker01' ,  {  
+const  picker  =  datepicker ('#datepicker01' ,{  
 	position: 'tr'
-} )
- const picker2 = datepicker('#datepicker02', {
+});
+ const picker2 = datepicker('#datepicker02',{
 	position: 'tr'
- })
+ });
 
 
 //************************** */  VIDEO  BG ***********************

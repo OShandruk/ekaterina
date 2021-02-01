@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+	"title":"Page"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<!--==================== STAY ======================= -->
+			<section class="stay">
+            <div class="stay__row">
+               <div class="stay__column stay__column-slider">
+                  <div class="swiper-container stay__slider">
+                     <div class="swiper-wrapper">
+                       <div class="swiper-slide">
+                          <img src="img/stay/slider01.jpg" alt="slider-img">
+                       </div>
+                       <div class="swiper-slide">
+                        <img src="img/stay/slider01.jpg" alt="slider-img">
+                     </div>
+                     <div class="swiper-slide">
+                        <img src="img/stay/slider01.jpg" alt="slider-img">
+                     </div>
+                       
+                     </div>
+                     <!-- Add Pagination -->
+                     <div class="swiper-pagination"></div>
+                   </div>
+               </div>
+            </div>
+         </section>
+			<!--==================== WHITE SPACE ======================= -->
+			<section class="white-space__section"></section>
+
+			<!--==================== WEATHER ======================= -->
+	
+			
+			@@include('_footer.html',{})
+			
+		</div>
+		@@include('_js.html',{})
+	</body>
+</html>
