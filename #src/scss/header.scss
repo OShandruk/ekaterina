@@ -5,9 +5,10 @@
 	width: 100%;
 	z-index: 2;
 	transition: all 0.3s ease;
+	padding: 10px 0px 10px 0px;
 	@media (max-width:$md2+px) {
 		background-color: #fff;
-		padding: 10px 0px 10px 0px;
+		
 	}
 }
 
@@ -15,14 +16,13 @@
 =======================================================*/
 .white__header {
 	background-color: #fff;
-	padding-bottom: 10px;
 	transition: all 0.3s ease;
+
 	.header__menu-label {
 		color:#6B6B6B;
 	} 
 	.header__logo {
 		display: inline-block;
-		margin-top: 10px;
 		filter: brightness(0.1);
 	}
 	.header__burger span{
@@ -43,34 +43,34 @@
 	}
 }
 
-
-
-
-
 /*========================================================*/
-
-
 
 
 /*FIXED HEADER
 =============================================*/
 .fix__header {
 	background-color: #fff;
-	padding-bottom: 10px;
+	
 	transition: all 0.3s ease;
+	.header__content {
+		height: 100px;
+		@media (max-width:$md2+px) {
+			height: 60px;
+			flex-direction: row-reverse;
+		}
+	}
 	.header__menu-label {
 		color:#6B6B6B;
 	} 
 	.header__logo {
-		display: inline-block;
-		margin-top: 10px;
+		transform: scale(0.7);
+		transition: all 0.3s ease;
 		filter: brightness(0.1);
-
-		img {
-				width: 131px;
-				height: 48px;
-				transition: all 0.3s ease;
-			}
+		@media (max-width:$md2+px){
+			transform: scale(1);
+		}
+	
+		
 	}
 	.header__burger span{
 		background-color:#6B6B6B;
@@ -91,10 +91,13 @@
 }
 /*===========================================================*/
 .header__content {
+	height: 155px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	transition: all 0.3s ease;
 	@media (max-width:$md2+px) {
+		height: 60px;
 		flex-direction: row-reverse;
 	}
 }
@@ -146,6 +149,8 @@
 }
 .header__logo {
 	display: inline-block;
+	transform: scale(1);
+	transition: all 0.3s ease;
 	margin-top: 10px;
 	
 	@media (max-width:$md2+px) {

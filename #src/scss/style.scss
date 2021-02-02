@@ -144,72 +144,7 @@ section {
 			color: #B98B4B;
 		}
 	}
-	.main__screen-form {
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		position: relative;
-		justify-content: center;
-		@media (max-width:1150px) {
-			flex-direction: column;
-			align-items: center;
-		}
-		@media (max-width:$md2+px) {
-			background-color: #fff;
-			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-			padding: 30px 35px 30px 35px;
-		}
-
-	}
-
-	.main__screen-form-item {
-		border-bottom: 1px solid #FFFFFF;
-		margin-right: 40px;
-		height: 40px;
-		@media (max-width:1150px) {
-			margin-bottom: 30px;
-			margin-right: 0;
-			width: 100%;
-		}
-		@media (max-width:$md2+px) {
-			border-bottom: 1px solid #4A4A4A;
-		}
-	}
-	.input__datepicker-wrap {
-		position: relative;
-		&:after {
-			content:'';
-			position: absolute;
-			top: 0;
-			right: 0;
-			width: 24px;
-			height: 24px;
-			background: url(../img/icons/calendar.svg)  no-repeat;
-			cursor: pointer;
-			@media (max-width:$md2+px) {
-				background: url(../img/header/calendar_darck.svg)  no-repeat;
-			}
-		}
-	}
-	.input__datepicker {
-		position: relative;
-		width: 225px;
-		font-family:"Philosopher";
-		background-color: transparent;
-		font-size: 24px;
-		color: #FFFFFF;
-		padding: 0px 15px 0px 15px;
-		@media (max-width:$md2+px) {
-			color: #4A4A4A;
-		}
-		&::placeholder{
-			color: #FFFFFF;
-			@media (max-width:$md2+px) {
-				color: #4A4A4A;
-			}
-		}
-		
-	}
+	
 	
 	.main__screen-arrow {
 		position: absolute;
@@ -237,6 +172,72 @@ section {
 		50%{bottom: 8%;}
 		100%{bottom: 4%;}
 	}
+}
+.main__screen-form {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	position: relative;
+	justify-content: center;
+	@media (max-width:1150px) {
+		flex-direction: column;
+		align-items: center;
+	}
+	@media (max-width:$md2+px) {
+		background-color: #fff;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		padding: 30px 35px 30px 35px;
+	}
+
+}
+
+.main__screen-form-item {
+	border-bottom: 1px solid #FFFFFF;
+	margin-right: 40px;
+	height: 40px;
+	@media (max-width:1150px) {
+		margin-bottom: 30px;
+		margin-right: 0;
+		width: 100%;
+	}
+	@media (max-width:$md2+px) {
+		border-bottom: 1px solid #4A4A4A;
+	}
+}
+.input__datepicker-wrap {
+	position: relative;
+	&:after {
+		content:'';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 24px;
+		height: 24px;
+		background: url(../img/icons/calendar.svg)  no-repeat;
+		cursor: pointer;
+		@media (max-width:$md2+px) {
+			background: url(../img/header/calendar_darck.svg)  no-repeat;
+		}
+	}
+}
+.input__datepicker {
+	position: relative;
+	width: 225px;
+	font-family:"Philosopher";
+	background-color: transparent;
+	font-size: 24px;
+	color: #FFFFFF;
+	padding: 0px 15px 0px 15px;
+	@media (max-width:$md2+px) {
+		color: #4A4A4A;
+	}
+	&::placeholder{
+		color: #FFFFFF;
+		@media (max-width:$md2+px) {
+			color: #4A4A4A;
+		}
+	}
+	
 }
 .white-space__section {
 	display: none;
@@ -1309,9 +1310,7 @@ section {
 	
 }
 
-
-
-
-
-
 /*===================================================*/
+// INCLUDE PAGE.SCSS
+@import "page";
+// ========================================================

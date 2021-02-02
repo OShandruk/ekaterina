@@ -100,7 +100,16 @@ var swiper = new Swiper('.party__slider', {
 	 }
  });
 
+ var swiper4 = new Swiper('.stay__slider', {
+	direction: 'vertical',
+	loop: true,
+	spaceBetween: 20,
 
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	},
+ });
 // *********************** JQUERY SCRIPTS **************************************************
 
 // function ibg(){
