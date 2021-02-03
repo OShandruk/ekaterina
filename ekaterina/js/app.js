@@ -1642,6 +1642,15 @@ var swiper = new Swiper('.party__slider', {
 	  clickable: true,
 	},
  });
+
+ var swiper5 = new Swiper('.apartmets__slider', {
+	pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+ });
+ 
+ 
 // *********************** JQUERY SCRIPTS **************************************************
 
 // function ibg(){
