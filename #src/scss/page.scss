@@ -191,6 +191,8 @@
 }
 .apartments__row {
    display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 
