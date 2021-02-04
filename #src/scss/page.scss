@@ -188,21 +188,39 @@
 /*APARTMENTS
 ========================================================*/
 .aparments {
+   background: url(../img/apartments/apartment__bg.png) left top  no-repeat;
+   @media (max-width:$md4+px){
+      padding: 0px 0px 0px 0px;
+   }
 }
 .apartments__row {
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
+   @media (max-width:$md2+px){
+      flex-direction: column;
+   }
 }
 
 
 .apartment__title {
    text-align-last: left;
    margin-bottom: 80px;
+   @media (max-width:$md4+px){
+      margin-bottom: 40px;
+   }
 }
 .aparments__column {
-   flex: 0 1 50%;
-   width: 50%;
+   flex: 0 1 47%;
+   width: 47%;
+   margin-bottom: 80px;
+   display: flex;
+   flex-direction: column;
+   @media (max-width:$md2+px){
+      flex: 0 1 100%;
+      width: 100%;
+   }
+
 }
 .apartments__item {
 }
@@ -214,6 +232,12 @@
 .apartmets__slider {
    margin-bottom: 30px;
    height: 430px;
+   @media (max-width:$md3+px){
+      height: 300px;
+   }
+   @media (max-width:$md4+px){
+      height: 225px;
+   }
 
    .swiper-wrapper {
       
@@ -243,6 +267,11 @@
    justify-content: space-between;
    align-items: flex-end;
    margin-bottom: 40px;
+   @media (max-width:$md2+px){
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
 }
 .apartments__item-title-wrap {
 
@@ -259,10 +288,16 @@
    font-size: 24px;
 }
 .apartments__item-btn {
+   display: block;
+   margin-left: 20px;
    color: #B98B4B;
    border: 1px solid rgba(185, 139, 75, 1);
    margin-right: 10px;
-	transition: all 0.3s ease;
+   transition: all 0.3s ease;
+   white-space: nowrap;
+   @media (max-width:$md2+px){
+     margin-top: 20px;
+   }
 	
 	&:after {
 		content: '';
@@ -306,10 +341,86 @@
       background:#B98B4B ;
    }
 }
-
-
-
 /*======================================================*/
+/*BALCONY
+================================================================*/
+.balcony {
+}
+.balcony__header {
+   height: 230px;
+   background: rgba(185, 139, 75, 0.5);
+}
+
+.balcony__row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: -200px;
+   @media (max-width:$md2+px){
+      flex-direction: column;
+      margin-top: -132px;
+   }
+   @media (max-width:385px){
+      margin-top: -162px;
+   }
+}
+.balcony__column {
+   flex: 0 1 47%;
+   @media (max-width:$md2+px){
+      flex: 0 1 100%;
+   }
+}
+.column__title {
+   color: #fff;
+   margin-bottom: 100px;
+}
+.balcony__title {
+   @media (max-width:$md2+px){
+      text-align: center;
+   }
+   @media (max-width:508px){
+      margin-bottom: 30px;
+   }
+}
+.balcony__content {
+}
+.balcony__paragraph {
+   font-family:"Philosopher";
+   font-size: 20px;
+   line-height: 122%;
+   margin-bottom: 30px;
+}
+.balcony__column-img {
+  height: 470px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  z-index: 1;
+  @media (max-width:508px){
+     margin-top: 0;
+  }
+
+ 
+  @media (max-width:$md2+px){
+   height: 400px;
+   
+}
+@media (max-width:$md4+px){
+   height: 200px;
+   margin-bottom: 50px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*====================================================================*/
 
 
 
