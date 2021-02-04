@@ -4155,25 +4155,21 @@ section {
 
 .page__aside {
   position: fixed;
-  top: 300px;
+  top: 200px;
   left: 0;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 20%;
-          flex: 0 1 20%;
   margin-right: 30px;
   background-color: red;
 }
 
 .main__page {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 70%;
-          flex: 0 1 70%;
-  padding-right: 50px;
-  background-color: #000;
+      -ms-flex: 0 1 90%;
+          flex: 0 1 90%;
 }
 
 .main__container {
   max-width: 1134px;
+  background-color: #000;
   margin: 0 auto;
 }
 
