@@ -184,11 +184,134 @@
 }
 .section__btn {
 }
-
-
-
-
-
-
-
 /*====================================================*/
+/*APARTMENTS
+========================================================*/
+.aparments {
+}
+.apartments__row {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+
+.apartment__title {
+   text-align-last: left;
+   margin-bottom: 80px;
+}
+.aparments__column {
+   flex: 0 1 50%;
+   width: 50%;
+}
+.apartments__item {
+}
+
+.img__test {
+   padding-top: 100px;
+}
+
+.apartmets__slider {
+   margin-bottom: 30px;
+   height: 430px;
+
+   .swiper-wrapper {
+      
+   }
+   .swiper-slide {
+     
+      padding: 0;
+   }
+   .swiper-pagination {
+   }
+   .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      border-radius: 100%;
+      background:#C4C4C4;
+      opacity: .2;
+   }
+   .swiper-pagination-bullet-active {
+      background:#fff !important;
+      opacity: 1;
+   }
+
+}
+.apartments__item-top-text {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   margin-bottom: 40px;
+}
+.apartments__item-title-wrap {
+
+}
+.apartments__item-title {
+   display: block;
+   font-family:"Philosopher";
+   color:#000;
+   font-size: 32px;
+   margin-bottom: 10px;
+}
+.apartments__item-subtitle {
+   font-family:"CormorantGaramond";
+   font-size: 24px;
+}
+.apartments__item-btn {
+   color: #B98B4B;
+   border: 1px solid rgba(185, 139, 75, 1);
+   margin-right: 10px;
+	transition: all 0.3s ease;
+	
+	&:after {
+		content: '';
+		position: absolute;
+		top: 2px; left: 2px; bottom: 2px; right: 2px;
+		border: 0.5px solid rgba(185, 139, 75, 1);
+	}
+	&:hover {
+		background-color: rgba(255, 255, 255, 1);
+		color: #B98B4B;
+		
+	}
+	&:hover:after {
+		border:none;
+	}
+}
+.aparments__item-text {
+   font-size: 22px;
+   line-height: 28px;
+}
+.apartments__item-list {
+   margin-top: 30px;
+   column-count: 2;
+   column-gap: 35px;
+}
+.apartments__item-list-item {
+   padding-left: 15px;
+   position: relative;
+   font-size: 22px;
+
+   &:before {
+      content:'';
+      position: absolute;
+      top: 0;
+      left: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background:#B98B4B ;
+   }
+}
+
+
+
+/*======================================================*/
+
+
+
+
+
