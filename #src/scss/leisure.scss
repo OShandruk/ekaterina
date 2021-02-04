@@ -3,11 +3,12 @@
    color:#000;
    padding-top: 300px;
    position: relative;
+   justify-content: center;
 }
 .page__aside {
-   // position: fixed;
-   // top: 300px;
-   // left: 0;
+   position: fixed;
+   top: 300px;
+   left: 0;
    flex: 0 1 20%;
    margin-right: 30px;
    background-color: red;
@@ -22,12 +23,13 @@
 .main__page {
    flex: 0 1 70%;
    padding-right: 50px;
+   background-color: #000;
    
 }
 .main__container {
-   background-color: #000;
-   // max-width: 1134px;
-   // margin: 0 auto;
+   
+   max-width: 1134px;
+   margin: 0 auto;
 }
 .main__page-nav {
 }

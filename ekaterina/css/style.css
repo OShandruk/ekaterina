@@ -4148,9 +4148,15 @@ section {
   color: #000;
   padding-top: 300px;
   position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .page__aside {
+  position: fixed;
+  top: 300px;
+  left: 0;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 20%;
           flex: 0 1 20%;
@@ -4163,10 +4169,12 @@ section {
       -ms-flex: 0 1 70%;
           flex: 0 1 70%;
   padding-right: 50px;
+  background-color: #000;
 }
 
 .main__container {
-  background-color: #000;
+  max-width: 1134px;
+  margin: 0 auto;
 }
 
 /*FOOTER
