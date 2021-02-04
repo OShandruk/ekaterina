@@ -4141,6 +4141,34 @@ section {
 
 /*====================================================================*/
 
+.page__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+  padding-top: 300px;
+  position: relative;
+}
+
+.page__aside {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  margin-right: 30px;
+  background-color: red;
+}
+
+.main__page {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 70%;
+          flex: 0 1 70%;
+  padding-right: 50px;
+}
+
+.main__container {
+  background-color: #000;
+}
+
 /*FOOTER
 =======================================================*/
 
