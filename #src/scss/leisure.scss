@@ -4,39 +4,171 @@
    padding-top: 300px;
    position: relative;
    justify-content: center;
+   padding-right: 15%;
+   @media (max-width:1580px){
+      padding-right: 8%;
+   }
+   @media (max-width:1400px){
+      padding-right: 3%;
+   }
+   a {
+      color: inherit;
+   }
 }
 .page__aside {
-   position: fixed;
-   top: 200px;
-   left: 0;
-   
+   height: 500px;
+   width: 573px;
    margin-right: 30px;
-   background-color: red;
+   
+   
 
 }
 .aside__nav {
+   padding-left: 50px;
+   @media (max-width:1400px){
+      padding-left: 15px;
+   }
 }
 .aside__nav-list {
+    li {
+      margin-bottom: 30px;
+    }
 }
 .aside_nav-link {
+   font-size: 18px;
+   
 }
 .main__page {
-   flex: 0 1 90%;
-  
-   
+   flex: 1 1 auto;
    
 }
 .main__container {
-   
-   max-width: 1134px;
-   background-color: #000;
-   margin: 0 auto;
+  
+   // max-width: 1134px;
+   // background-color: #000;
+   // margin: 0 auto;
 }
 .main__page-nav {
+   margin-bottom: 70px;
 }
 .main__page-nav-list {
+   display: flex;
+   justify-content: space-between;
 }
 .main__page-nav-link {
+   white-space: nowrap;
+   padding: 0px 50px 15px 50px;
+   font-family:"Philosopher";    
+   font-size: 24px;
+   text-transform: uppercase;
+   color: #3A3A3A;
+   border-bottom: 1px solid transparent; 
+   @media (max-width:1400px){
+      padding: 0px 25px 15px 25px;
+   }      
 }
 .active {
+   border-bottom: 1px solid rgba(185, 139, 75, 0.8);
+}
+.article__museum {
+   
+   padding: 50px 0px 50px 0px;
+   position: relative;
+   &:after {
+      content:'';
+      position: absolute;
+      left: 50%;
+      
+      transform: translate(-50%, 0);
+      bottom: 0;
+      width: 80%;
+      height: 2px;
+      background: rgba(185, 139, 75, 0.8); 
+   }
+}
+.article__museum-wrap {
+   display: flex;
+}
+.article__museum-column {
+   flex: 0 1 50%;
+   display: flex;
+   flex-direction: column;
+}
+.article__museum-column-img {
+   margin-right: 40px;  
+}
+.article__museum-column-text {
+   justify-content: space-between;
+}
+.article__museum-img {
+   padding-top: 114%;
+}
+.article__title {
+   font-size: 42px;
+   line-height: 51px;
+   margin-bottom: 60px;
+}
+.article__museum-title {
+   text-align: right;
+}
+.article__column-text {
+   margin-bottom: 40px;
+}
+.article__paragraph {
+   font-size: 20px;
+   line-height: 140%;
+   text-align: right;
+   margin-bottom: 40px;
+}
+.article__museum-logo-wrap {
+   display: flex;
+   justify-content: space-between;
+}
+.article__museum-logo {
+}
+.article__museum-icon-wrap {
+
+}
+.article__museum-icon {
+   display: flex;
+   margin-bottom: 50px;
+  
+}
+
+/*ART
+=============================*/
+
+.article__art-img {
+   height: 330px;
+   margin-bottom: 70px;
+}
+.article__art-wrap {
+   display: flex;
+   flex-direction: row-reverse;
+
+   .article__museum-img {
+      padding-top: 80%;
+   }
+   .article__paragraph {
+      text-align: left;
+   }
+}
+.article__art-title {
+   text-align: center;
+}
+.article__art-column-img {
+   margin-left: 50px;
+}
+.article__art-logo-wrap {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+}
+.article__column-text-art {
+   text-align: left;
+}
+/*LITERARY
+=============================*/
+.article__literary-img {
+   padding-top: 92%;
 }

@@ -334,10 +334,10 @@ function fix_block(scr_fix_block, scr_value) {
 				} else {
 					gotoRelative(item);
 				}
-				if (scr_value > (block.offsetHeight + offset(block).top) - (item.offsetHeight + (header_height + 15))) {
-					block.style.cssText = "position:relative;";
-					item.style.cssText = "position:absolute;bottom:0;top:auto;left:0px;width:100%";
-				}
+				// if (scr_value > (block.offsetHeight + offset(block).top) - (item.offsetHeight + (header_height + 15))) {
+				// 	block.style.cssText = "position:relative;";
+				// 	item.style.cssText = "position:absolute;bottom:0;top:auto;left:0px;width:100%";
+				// }
 			} else {
 				gotoRelative(item);
 			}
