@@ -4146,7 +4146,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   color: #000;
-  padding-top: 300px;
+  padding-top: 210px;
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -4353,6 +4353,38 @@ section {
 
 .article__literary-img {
   padding-top: 92%;
+}
+
+/*MODERN
+=====================  */
+
+.article__modern-logo-wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.article__modern-column-text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 78%;
+          flex: 0 1 78%;
+}
+
+.article__modern-column-logo {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 22%;
+          flex: 0 1 22%;
+  margin-right: 30px;
+}
+
+.article__modern-img {
+  padding-top: 40%;
+  margin-bottom: 30px;
 }
 
 /*FOOTER

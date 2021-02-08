@@ -1,7 +1,7 @@
 .page__wrapper {
    display: flex;
    color:#000;
-   padding-top: 300px;
+   padding-top: 210px;
    position: relative;
    justify-content: center;
    padding-right: 15%;
@@ -171,4 +171,24 @@
 =============================*/
 .article__literary-img {
    padding-top: 92%;
+}
+
+/*MODERN
+=====================  */
+.article__modern-logo-wrap {
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+}
+.article__modern-column-text  {
+   flex: 0 1 78%;
+   
+}
+.article__modern-column-logo {
+   flex: 0 1 22%;
+   margin-right: 30px;
+}
+.article__modern-img {
+   padding-top: 40%;
+   margin-bottom: 30px;
 }
