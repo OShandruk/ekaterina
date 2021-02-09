@@ -616,7 +616,6 @@ ol.counter li:before {
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: -1;
 }
 
 body.ie ._ibg {
@@ -4174,6 +4173,17 @@ section {
 
 .aside_nav-link {
   font-size: 18px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.aside_nav-link:hover {
+  color: rgba(185, 139, 75, 0.8);
+}
+
+.aside_nav-link._active {
+  color: rgba(185, 139, 75, 0.8);
 }
 
 .main__page {
@@ -4195,18 +4205,22 @@ section {
           justify-content: space-between;
 }
 
-.main__page-nav-link {
-  white-space: nowrap;
-  padding: 0px 50px 15px 50px;
-  font-family: "Philosopher";
-  font-size: 24px;
-  text-transform: uppercase;
-  color: #3A3A3A;
-  border-bottom: 1px solid transparent;
+.main__page-nav-list li {
+  padding: 0px 25px 15px 25px;
+  border-bottom: 2px solid  transparent;
+  text-align: center;
 }
 
-.active {
-  border-bottom: 1px solid rgba(185, 139, 75, 0.8);
+.main__page-nav-list li.active {
+  border-bottom: 2px solid rgba(185, 139, 75, 0.8);
+}
+
+.main__page-nav-link {
+  font-family: "Philosopher";
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3A3A3A;
 }
 
 .article__museum {
@@ -4387,6 +4401,96 @@ section {
   margin-bottom: 30px;
 }
 
+/*OFFER
+============================================================*/
+
+.offers__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #F5EEE4;
+  padding: 50px;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.offers__article-left-img .offers__article-column-img {
+  margin-right: 60px;
+}
+
+.offers__article-right-img {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.offers__article-right-img .offers__article-column-img {
+  margin-right: 0;
+  margin-left: 60px;
+}
+
+.offers__article-right-img .offers__article-column-text {
+  text-align: right;
+}
+
+.offers__article-column-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+
+.offers__article-img-left {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  width: 40%;
+}
+
+.offers__article-img-left img {
+  width: 100%;
+  height: 100%;
+}
+
+.offers__article-img-right {
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+  width: 40%;
+}
+
+.offers__article-img-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.offers__article-column-text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.offers__article-column-title {
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.offers__article-text {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.offers__article-text p {
+  margin-bottom: 20px;
+}
+
+/*===================================================================*/
+
 /*FOOTER
 =======================================================*/
 
@@ -4545,10 +4649,6 @@ section {
   .aside__nav {
     padding-left: 15px;
   }
-
-  .main__page-nav-link {
-    padding: 0px 25px 15px 25px;
-  }
 }
 
 @media (max-width: 1365px) {
@@ -4570,6 +4670,16 @@ section {
 @media (max-width: 1200px) {
   .footer__content {
     padding: 113px 70px 150px 70px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .offers__article-left-img .offers__article-column-img {
+    margin-right: 20px;
+  }
+
+  .offers__article-right-img .offers__article-column-img {
+    margin-left: 20px;
   }
 }
 
@@ -5091,6 +5201,100 @@ section {
     height: 400px;
   }
 
+  .page__wrapper {
+    padding-top: 110px;
+    padding-right: 0;
+  }
+
+  .page__aside {
+    display: none;
+  }
+
+  .main__page-nav {
+    margin-bottom: 10px;
+  }
+
+  .main__page-nav-list {
+    background-color: #F2F2F2;
+    padding: 10px 0px 0px 0px;
+  }
+
+  .main__page-nav-list li {
+    padding: 0px 10px 15px 10px;
+  }
+
+  .main__page-nav-link {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .article__museum {
+    padding: 10px 0px 30px 0px;
+    margin-bottom: 50px;
+  }
+
+  .article__museum-column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .article__museum-column:first-child {
+    display: none;
+  }
+
+  .article__museum-img {
+    width: 80%;
+    padding-top: 93%;
+    margin-bottom: 20px;
+  }
+
+  .article__title {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .article__column-text {
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+  }
+
+  .article__paragraph {
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  .article__museum-logo {
+    margin-right: 30px;
+  }
+
+  .article__art-wrap .article__paragraph {
+    text-align: center;
+  }
+
+  .article__literary-img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .article__modern-img {
+    width: 80%;
+  }
+
+  .article__modern-logo {
+    margin-bottom: 20px;
+  }
+
+  .offers__article {
+    margin-bottom: 30px;
+  }
+
   .footer__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -5180,11 +5384,38 @@ section {
   .apartmets__slider {
     height: 300px;
   }
+
+  .offers__article-img-left {
+    top: 30px;
+    left: 15px;
+  }
+
+  .offers__article-img-right {
+    bottom: 30px;
+    right: 15px;
+  }
+
+  .offers__article-column-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+
+  .offers__article-text {
+    font-size: 14px;
+    line-height: 140%;
+  }
 }
 
 @media (max-width: 700px) {
   .service__gallery-img-item {
     margin-left: 0px;
+  }
+}
+
+@media (max-width: 620px) {
+  .offers__article {
+    padding: 10px 20px 10px 10px;
   }
 }
 
@@ -5335,6 +5566,36 @@ section {
   .balcony__column-img {
     height: 200px;
     margin-bottom: 50px;
+  }
+
+  .article__museum-img {
+    width: 100%;
+  }
+
+  .article__literary-img {
+    width: 100%;
+  }
+
+  .article__modern-img {
+    width: 100%;
+  }
+
+  .offers__article-left-img .offers__article-column-img {
+    margin-right: 0px;
+  }
+
+  .offers__article-right-img .offers__article-column-img {
+    margin-left: 0px;
+  }
+
+  .offers__article-img-left {
+    top: 30px;
+    left: 5px;
+  }
+
+  .offers__article-img-right {
+    bottom: 30;
+    right: 5px;
   }
 
   .footer__content {

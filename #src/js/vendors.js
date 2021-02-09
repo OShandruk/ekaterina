@@ -4,6 +4,8 @@
 @@include('libs/jquery.vide.js', {})
 @@include('libs/leader-line.min.js', {})
 @@include('libs/tippy.js', {})
+@@include('libs/smoothScroll.js', {})
+
 
 
 

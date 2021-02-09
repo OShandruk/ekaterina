@@ -1381,7 +1381,7 @@ if (goto_links) {
 		});
 	}
 }
-function _goto(target_block, speed, offset = 0) {
+function _goto(target_block, speed, offset = 200) {
 	let header = '';
 	//OffsetHeader
 	//if (window.innerWidth < 992) {
