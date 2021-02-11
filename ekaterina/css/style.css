@@ -2247,7 +2247,7 @@ button.swiper-pagination-bullet {
 =============================================*/
 
 .fix__header {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
