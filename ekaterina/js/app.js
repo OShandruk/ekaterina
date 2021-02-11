@@ -1811,8 +1811,24 @@ var swiper = new Swiper('.party__slider', {
         clickable: true,
     },
  });
- 
- 
+
+ var swiper5 = new Swiper('.contact__reviews-slider', {
+	slidesPerView: 1,
+	loop: true,
+	spaceBetween: 0,
+
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	},
+	breakpoints: {
+		991.98: {
+			direction: 'vertical',
+			slidesPerView: 3,
+			spaceBetween: 5,
+		},
+	 }
+ });
 // *********************** JQUERY SCRIPTS **************************************************
 
 // function ibg(){
