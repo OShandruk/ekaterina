@@ -1686,6 +1686,13 @@ var swiper = new Swiper('.party__slider', {
         clickable: true,
     },
  });
+ var swiper6 = new Swiper('.room__slider', {
+	slidesPerView: 1,
+	pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+ });
 
  var swiper5 = new Swiper('.contact__reviews-slider', {
 	slidesPerView: 1,
