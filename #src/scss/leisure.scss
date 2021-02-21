@@ -1,7 +1,7 @@
 .page__wrapper {
    display: flex;
    color:#000;
-   padding-top: 300px;
+   padding-top: 210px;
    position: relative;
    justify-content: center;
    padding-right: 15%;
@@ -11,6 +11,10 @@
    @media (max-width:1400px){
       padding-right: 3%;
    }
+   @media (max-width:$md2+px){
+      padding-top: 110px;
+      padding-right: 0;
+   }
    a {
       color: inherit;
    }
@@ -19,6 +23,9 @@
    height: 500px;
    width: 573px;
    margin-right: 30px;
+   @media (max-width:$md2+px){
+      display: none;
+   }
    
    
 
@@ -36,6 +43,13 @@
 }
 .aside_nav-link {
    font-size: 18px;
+   transition: all 0.3s ease;
+   &:hover {
+      color:rgba(185, 139, 75, 0.8);
+   }
+   &._active {
+      color:rgba(185, 139, 75, 0.8);
+   }
    
 }
 .main__page {
@@ -50,30 +64,48 @@
 }
 .main__page-nav {
    margin-bottom: 70px;
+   @media (max-width:$md2+px){
+      margin-bottom: 10px;
+   }
 }
 .main__page-nav-list {
    display: flex;
    justify-content: space-between;
+   @media (max-width:$md2+px){
+      background-color: #F2F2F2;
+      padding: 10px 0px 0px 0px;
+   }
+   li {
+      padding: 0px 25px 15px 25px;
+      border-bottom: 2px solid  transparent;
+      text-align: center;
+      @media (max-width:$md2+px){
+         padding: 0px 10px 15px 10px;
+      }
+      &.active {
+         border-bottom: 2px solid  rgba(185, 139, 75, 0.8);
+      }
+   }
 }
 .main__page-nav-link {
-   white-space: nowrap;
-   padding: 0px 50px 15px 50px;
    font-family:"Philosopher";    
    font-size: 24px;
+   text-align: center;
    text-transform: uppercase;
    color: #3A3A3A;
-   border-bottom: 1px solid transparent; 
-   @media (max-width:1400px){
-      padding: 0px 25px 15px 25px;
-   }      
-}
-.active {
-   border-bottom: 1px solid rgba(185, 139, 75, 0.8);
+   @media (max-width:$md2+px){
+      font-size: 14px;
+      line-height: 14px;
+   }
 }
 .article__museum {
    
    padding: 50px 0px 50px 0px;
    position: relative;
+   @media (max-width:$md2+px){
+      padding: 10px 0px 30px 0px;
+      margin-bottom: 50px;
+   }
    &:after {
       content:'';
       position: absolute;
@@ -93,6 +125,13 @@
    flex: 0 1 50%;
    display: flex;
    flex-direction: column;
+   @media (max-width:$md2+px){
+      flex: 0 1 100%;
+      align-items: center;
+      &:first-child {
+         display: none;
+      }
+   }
 }
 .article__museum-column-img {
    margin-right: 40px;  
@@ -102,29 +141,60 @@
 }
 .article__museum-img {
    padding-top: 114%;
+   @media (max-width:$md2+px){
+      width: 80%;
+      padding-top: 93%;
+      margin-bottom: 20px;
+   }
+   @media (max-width:$md4+px){
+      width: 100%;
+   }
+   
 }
 .article__title {
    font-size: 42px;
    line-height: 51px;
    margin-bottom: 60px;
+   @media (max-width:$md2+px){
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 20px;
+
+   }
+
 }
 .article__museum-title {
    text-align: right;
+   
 }
 .article__column-text {
    margin-bottom: 40px;
+   @media (max-width:$md2+px){
+      padding: 0px 10px 0px 10px;
+      text-align: center;
+   }
+  
 }
 .article__paragraph {
    font-size: 20px;
    line-height: 140%;
    text-align: right;
    margin-bottom: 40px;
+   @media (max-width:$md2+px){
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
+   }
 }
 .article__museum-logo-wrap {
    display: flex;
    justify-content: space-between;
 }
 .article__museum-logo {
+   @media (max-width:$md2+px){
+      margin-right: 30px;
+   }
 }
 .article__museum-icon-wrap {
 
@@ -151,6 +221,9 @@
    }
    .article__paragraph {
       text-align: left;
+      @media (max-width:$md2+px){
+         text-align: center;
+      }
    }
 }
 .article__art-title {
@@ -171,4 +244,45 @@
 =============================*/
 .article__literary-img {
    padding-top: 92%;
+   @media (max-width:$md2+px){
+      width: 80%;
+      margin-bottom: 20px;
+   }
+   @media (max-width:$md4+px){
+      width: 100%;
+   }
+}
+.article__literary-column-text {
+
+}
+
+/*MODERN
+=====================  */
+.article__modern-logo-wrap {
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+}
+.article__modern-column-text  {
+   flex: 0 1 78%;
+   
+}
+.article__modern-column-logo {
+   flex: 0 1 22%;
+   margin-right: 30px;
+}
+.article__modern-img {
+   padding-top: 40%;
+   margin-bottom: 30px;
+   @media (max-width:$md2+px){
+      width: 80%;
+   }
+   @media (max-width:$md4+px){
+      width: 100%;
+   }
+}
+.article__modern-logo {
+   @media (max-width:$md2+px){
+      margin-bottom: 20px;
+   }
 }

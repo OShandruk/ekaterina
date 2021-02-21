@@ -1,0 +1,234 @@
+/*CONTACT
+=========================================*/
+.contact__main-screen {
+  
+   padding-top: 210px;
+   @media (max-width:$md2+px){
+      padding-top: 100px;
+   }
+}
+.contact__row {
+   display: flex;
+   @media (max-width:$md2+px){
+      flex-direction: column;
+   }
+}
+.contact__column {
+   flex: 0 1 50%;
+   display: flex; 
+   flex-direction: column;
+   @media (max-width:$md2+px){
+      flex: 0 1 100%;
+      align-items: center;
+   }
+   &:first-child {
+      margin-right: 30px;
+   }
+   
+}
+.contact__inner-item-wrap {
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   flex-wrap: wrap;
+   padding-left: 20%;
+   margin: 0 -20px;
+   @media (max-width:1300px){
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   @media (max-width:$md2+px){
+     padding-left: 0;
+     align-items: center;
+   }
+}
+.contact__title {
+   padding-left: 30px;
+   margin-bottom: 50px;
+   font-size: 120px;
+   text-transform: uppercase;
+   color: rgba(0, 0, 0, 0.2);
+   @media (max-width:1300px){
+      font-size: 86px;
+   }
+   @media (max-width:$md2+px){
+      font-size: 56px;
+    }
+}
+.contact__inner-item {
+   flex: 0 1 50%;
+   padding: 0 20px;
+   margin-bottom: 80px;
+   @media (max-width:$md2+px){
+      text-align: center;
+    }
+}
+.contact__inner-item-title {
+   margin-bottom: 20px;
+   font-weight:700;
+   font-size: 24px;
+   line-height: 24px;
+   text-transform: uppercase;
+   color: #000;
+}
+.contact__inner-mail-link {
+   margin-bottom: 40px;
+   display: block;
+   font-size: 24px;
+   line-height: 24px;
+   color: #000;
+   &:hover {
+      text-decoration: underline;
+   }
+}
+.contact__inner-link {
+   display: block;
+   font-size: 24px;
+   line-height: 24px;
+   color: #000;
+   &:hover {
+      text-decoration: underline;
+   }
+}
+.contact__inner-item-subtitle {
+   display:block;
+   font-size: 24px;
+   line-height: 24px;
+   margin-bottom: 40px;
+}
+.contact__column-map {
+   width: 100%;
+   height: 100%;
+   @media (max-width:$md2+px){
+      height: 380px;
+   }
+
+}
+
+/*====================================*/
+
+
+/*REVIEWS
+========================================*/
+.contact__reviews {
+   .reviews__item {
+      display: flex;
+      flex-direction: row;
+   }
+   .reviews__stars {
+      margin-left: 20px;
+   }
+}
+.contact__title {
+}
+.contact__reviews-row {
+   display: flex;
+   color: #fff;
+   @media (max-width:$md2+px){
+      flex-direction: column;
+   }
+}
+.contact__reviews-column {
+   flex: 0 1 50%;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   @media (max-width:$md2+px){
+      flex: 0 1 100%;
+      width: 100%;
+   }
+}
+.contact__reviews-column-form {
+   padding-top: 45px;
+   padding-bottom: 30px;
+   padding-right: 20px;
+   margin-right: 70px;
+   align-items: flex-end;
+   padding-right: 5%;
+   text-align: right;
+   background: #635F5B url(../img/contact/pattern.png) left  no-repeat;
+   @media (max-width:1100px){
+      margin-right: 20px;
+   }
+   @media (max-width:$md2+px){
+      margin-bottom: 50px;
+   }
+}
+.contact__reviews-column-slider {
+   padding-right: 3%;
+}
+.contact__reviews-title {
+   font-size: 36px;
+   line-height: 44px;
+   text-transform: uppercase;
+   margin-bottom: 22px;
+}
+.contact__reviews-subtitle {
+   font-size: 30px;
+   line-height: 36px;
+   margin-bottom: 20px;
+}
+.contact__reviews-form {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   width: 100%;
+   input {
+      width: 70%;
+      background-color: transparent;
+      font-size: 30px;
+      color:#fff;
+      text-align: right;
+      padding: 5px 10px 5px 10px;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 20px;
+      @media (max-width:$md2+px){
+         width: 95%;
+      }
+      &::placeholder {
+         font-size: 30px;
+         color:#fff
+      }
+      &[type='button'] {
+        
+      }
+   }
+   
+.swiper-container {
+}
+.contact__reviews-form-btn {
+   margin-top: 80px;
+   padding: 8px 60px 8px 60px;
+}
+
+}
+
+.contact__reviews-slider{
+   width: 100%;
+   height: 700px;
+   @media (max-width:1550px){
+      height: 900px;
+   }
+   @media (max-width:$md2+px){
+      height: 300px;
+   }
+   @media (max-width:$md4+px){
+      height: 400px;
+   }
+   
+
+   .swiper-slide {
+      padding-top: 10px;
+      // @media (max-width:$md2+px){
+      //    padding: 0px 20px 0px 20px;
+      // }
+
+   }
+   .reviews__stars {
+      @media (max-width:1370px){
+         display: none;
+      }
+      
+   }
+}
+/*=======================================*/
