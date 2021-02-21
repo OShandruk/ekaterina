@@ -117,13 +117,24 @@ var swiper = new Swiper('.party__slider', {
         clickable: true,
     },
  });
- var swiper6 = new Swiper('.room__slider', {
+ var room__sliderBottom = new Swiper('.room__slider-bottom', {
+	spaceBetween: 20,
+	slidesPerView: 4,
+	watchSlidesVisibility: true,
+	watchSlidesProgress: true,
+ });
+ var room__sliderTop = new Swiper('.room__slider-top', {
 	slidesPerView: 1,
+	effect: 'fade',
 	pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
+	thumbs: {
+		swiper: room__sliderBottom
+	 }
  });
+
 
  var swiper5 = new Swiper('.contact__reviews-slider', {
 	slidesPerView: 1,
