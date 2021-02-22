@@ -46,7 +46,9 @@
       color: inherit;
    }
    .aparments__item-text {
-      text-align: center;
+      @media (max-width:$md3+px){
+         text-align: center;
+      }
    }
    .room-btn {
       display: inline-block;

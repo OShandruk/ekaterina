@@ -12,7 +12,7 @@
 	visibility: hidden;
 	&::before {
 		content: "";
-		background-color: rgba(0, 0, 0, 0.9);
+		background-color: rgba(0, 0, 0, 0.6);
 		position: fixed;
 		width: 100%;
 		height: 100%;
@@ -63,6 +63,10 @@
 		width: 100%;
 		max-width: 800px;
 	}
+	.room__popup-body {
+		max-width: 100%;
+		padding: 0;
+	}
 	// .popup__close
 	&__close {
 		width: 15px;
@@ -73,6 +77,14 @@
 		cursor: pointer;
 		z-index: 30;
 		background: url("../img/icons/close.svg") 0 0 no-repeat;
+	}
+	.room-popup__close {
+		background: url("../img/room/close.png") 0 0 no-repeat;
+		width: 50px;
+		height: 50px;
+		top: 30px;
+		right: 50px;
+
 	}
 }
 //====================================================================================================
