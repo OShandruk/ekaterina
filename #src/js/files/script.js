@@ -111,12 +111,27 @@ var swiper = new Swiper('.party__slider', {
 	},
  });
 
- var swiper5 = new Swiper('.apartmets__slider', {
-	pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
- });
+ 
+
+
+const myCustomSlider = document.querySelectorAll('.apartmets__slider');
+const myCustomPagination = document.querySelectorAll('.apartment-swiper-pagination');
+var apartmentSlider = new Array();
+for( i=0; i< myCustomSlider.length; i++ ) {
+  myCustomSlider[i].classList.add('apartmets__slider-' + i);
+  myCustomPagination[i].classList.add('apartment-swiper-pagination-' + i);
+  apartmentSlider[i] = 'apartmentSlider' + [i];
+  console.log(apartmentSlider[i]);
+  apartmentSlider[i] = new Swiper('.apartmets__slider-' + i, {
+		pagination: {
+			el: '.apartment-swiper-pagination-'+ i,
+			clickable: true,
+	},
+  });
+
+}
+
+
  var room__sliderBottom = new Swiper('.room__slider-bottom', {
 	spaceBetween: 20,
 	slidesPerView: 4,
