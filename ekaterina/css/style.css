@@ -4901,6 +4901,150 @@ section {
   text-align: center;
 }
 
+.booking-room {
+  padding-top: 350px;
+}
+
+.booking-room .booking-room__form {
+  position: relative;
+  width: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.15);
+}
+
+.booking-room .booking-room__input {
+  font-family: Philosopher;
+  background-color: transparent;
+  font-size: 18px;
+  color: #4a4a4a;
+  padding: 0 15px 0 15px;
+}
+
+.booking-room .booking-room__bredcrumb {
+  margin-bottom: 50px;
+}
+
+.booking-room .booking-room__bredcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking-room .booking-room__bredcrumb-link {
+  white-space: nowrap;
+  padding: 0px 20px 0px 20px;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.booking-room .active {
+  color: #000000;
+}
+
+.booking-room .booking-room__bredcrumb-line {
+  display: block;
+  width: 100%;
+  padding: 0px 20px 0px 20px;
+  height: 1px;
+  background: #B98B4B;
+}
+
+.booking-room__form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.booking-room__form-wrapper .main__screen-form-item {
+  width: 225px;
+  margin-right: 0;
+  margin: 0px  30px 40px 0px;
+}
+
+.booking-room__form-wrapper .main__screen-form-item .booking-room__checkbox-text {
+  padding: 0px 15px 0px 15px;
+  font-family: Philosopher;
+  background-color: transparent;
+  font-size: 18px;
+  color: #4a4a4a;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.booking-room__form-wrapper .main__screen-form-item .checkbox__input:checked + .checkbox__text:before {
+  background: #fff url("../img/booking/arrow.svg") center no-repeat;
+}
+
+.booking-room__form-wrapper .main__screen-form-item .checkbox__text:before {
+  content: "";
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0px 0px 0px 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20px;
+          flex: 0 0 20px;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 18px;
+  background: #fff;
+  border: 1px solid #a7a9ac;
+}
+
+.booking-room__form-wrapper .main__screen-form-item .checkbox._error .checkbox__text:before {
+  border: 1px solid #ee1212;
+}
+
+.booking-room__form-wrapper .main__screen-form-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+
+.booking-room__form-wrapper .select__value span {
+  font-size: 18px;
+}
+
+.booking-room__form-wrapper .select__option {
+  font-size: 18px;
+}
+
+.booking-room__form-wrapper .input__datepicker {
+  font-size: 18px;
+}
+
+.booking-room__form-wrapper .input__datepicker::-webkit-input-placeholder {
+  font-size: 18px;
+}
+
+.booking-room__form-wrapper .input__datepicker::-moz-placeholder {
+  font-size: 18px;
+}
+
+.booking-room__form-wrapper .input__datepicker:-ms-input-placeholder {
+  font-size: 18px;
+}
+
+.booking-room__form-wrapper .input__datepicker::-ms-input-placeholder {
+  font-size: 18px;
+}
+
+.booking-room__form-wrapper .input__datepicker::placeholder {
+  font-size: 18px;
+}
+
 /*FOOTER
 =======================================================*/
 
@@ -5170,6 +5314,10 @@ section {
     margin-bottom: 30px;
     margin-right: 0;
     width: 100%;
+  }
+
+  .booking-room__form-wrapper .main__screen-form-item:nth-last-child(-n + 4) {
+    margin-bottom: 40px;
   }
 }
 

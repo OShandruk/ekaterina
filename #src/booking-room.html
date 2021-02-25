@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('_head.html',{
+	"title":"Booking-room"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<section class="booking-room">
+            <div class="booking-room__bredcrumb">
+               <div class="_container">
+                  <div class="booking-room__bredcrumb-row">
+                     <ul class="booking-room__bredcrumb-list">
+                        <li class="booking-room__bredcrumb-item"> <a href="#" class="booking-room__bredcrumb-link active">rooms</a></li>
+                        <li class="booking-room__bredcrumb-item booking-room__bredcrumb-line"> </li>
+                        <li class="booking-room__bredcrumb-item"> <a href="#" class="booking-room__bredcrumb-link">guest details</a></li>
+                        <li class="booking-room__bredcrumb-item booking-room__bredcrumb-line"> </li>
+                        <li class="booking-room__bredcrumb-item"> <a href="#" class="booking-room__bredcrumb-link">confirmation</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="_container">
+               <form  class="main__screen-form stay__form booking-room__form">
+                  <div class="booking-room__form-wrapper">
+                     <div class="main__screen-form-item">
+                        <select name="form[]" class="form">
+                           <option value="1" selected="selected">Location</option>
+                           <option value="2">Ekaterina</option>
+                           <option value="3">Ekaterina II</option>
+                        </select>
+                     </div>
+                     <div class="main__screen-form-item input__datepicker-wrap">
+                        <input type="text" id="datepicker01"  class="input__datepicker" placeholder="Arriving">
+                     </div>
+                     <div class="main__screen-form-item input__datepicker-wrap">
+                        <input type="text" id="datepicker02" class="input__datepicker" placeholder="Leaving">
+                     </div>
+                     <div class="main__screen-form-item">
+                        <select name="form[]" class="form">
+                           <option value="1" selected="selected">Persons</option>
+                           <option value="2">1</option>
+                           <option value="3">2</option>
+                           <option value="3">2 + child</option>
+                           <option value="3">Other options</option>
+                        </select>
+                     </div>
+                     <div class="main__screen-form-item ">
+                        <label class="checkbox">
+                           <input data-error="Ошибка" class="checkbox__input " type="checkbox" value="1" name="form[]" placeholder="">
+                           <span class="checkbox__text booking-room__checkbox-text"><span>With breakfast only</span></span>
+                        </label>
+                     </div>
+                     <div class="main__screen-form-item ">
+                        <input type="text"  class="booking-room__input" placeholder="Check-in time">
+                     </div>
+                     <div class="main__screen-form-item ">
+                        <input type="text"  class="booking-room__input" placeholder="Check-in time">
+                     </div>
+                     <div class="main__screen-form-item">
+                        <select name="form[]" class="form">
+                           <option value="1" selected="selected">Kids</option>
+                           <option value="2">1</option>
+                           <option value="3">2</option>
+                           <option value="3">3</option>
+                           <option value="3">Other options</option>
+                        </select>
+                     </div>
+                     
+
+                  </div>
+                  
+   
+                  <button class="main__screen-btn section__btn ">Search</button>
+   
+               </form>
+            </div>
+				
+				
+			</section>
+
+			
+			@@include('_footer.html',{})
+			
+		</div>
+		@@include('_js.html',{})
+		
+	</body>
+</html>
