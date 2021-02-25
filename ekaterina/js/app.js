@@ -1685,13 +1685,10 @@ var swiper = new Swiper('.party__slider', {
 
 const myCustomSlider = document.querySelectorAll('.apartmets__slider');
 const myCustomPagination = document.querySelectorAll('.apartment-swiper-pagination');
-var apartmentSlider = new Array();
 for( i=0; i< myCustomSlider.length; i++ ) {
   myCustomSlider[i].classList.add('apartmets__slider-' + i);
   myCustomPagination[i].classList.add('apartment-swiper-pagination-' + i);
-  apartmentSlider[i] = 'apartmentSlider' + [i];
-  console.log(apartmentSlider[i]);
-  apartmentSlider[i] = new Swiper('.apartmets__slider-' + i, {
+  var apartmentSlider = new Swiper('.apartmets__slider-' + i, {
 		pagination: {
 			el: '.apartment-swiper-pagination-'+ i,
 			clickable: true,

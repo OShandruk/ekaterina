@@ -6,7 +6,7 @@
 	<body>
 		<div class="wrapper">
 			@@include('_header.html',{})
-			<section class="booking-room">
+         <main class="booking-page">
             <div class="booking-room__bredcrumb">
                <div class="_container">
                   <div class="booking-room__bredcrumb-row">
@@ -20,64 +20,102 @@
                   </div>
                </div>
             </div>
-            <div class="_container">
-               <form  class="main__screen-form stay__form booking-room__form">
-                  <div class="booking-room__form-wrapper">
-                     <div class="main__screen-form-item">
-                        <select name="form[]" class="form">
-                           <option value="1" selected="selected">Location</option>
-                           <option value="2">Ekaterina</option>
-                           <option value="3">Ekaterina II</option>
-                        </select>
-                     </div>
-                     <div class="main__screen-form-item input__datepicker-wrap">
-                        <input type="text" id="datepicker01"  class="input__datepicker" placeholder="Arriving">
-                     </div>
-                     <div class="main__screen-form-item input__datepicker-wrap">
-                        <input type="text" id="datepicker02" class="input__datepicker" placeholder="Leaving">
-                     </div>
-                     <div class="main__screen-form-item">
-                        <select name="form[]" class="form">
-                           <option value="1" selected="selected">Persons</option>
-                           <option value="2">1</option>
-                           <option value="3">2</option>
-                           <option value="3">2 + child</option>
-                           <option value="3">Other options</option>
-                        </select>
-                     </div>
-                     <div class="main__screen-form-item ">
-                        <label class="checkbox">
-                           <input data-error="Ошибка" class="checkbox__input " type="checkbox" value="1" name="form[]" placeholder="">
-                           <span class="checkbox__text booking-room__checkbox-text"><span>With breakfast only</span></span>
-                        </label>
-                     </div>
-                     <div class="main__screen-form-item ">
-                        <input type="text"  class="booking-room__input" placeholder="Check-in time">
-                     </div>
-                     <div class="main__screen-form-item ">
-                        <input type="text"  class="booking-room__input" placeholder="Check-in time">
-                     </div>
-                     <div class="main__screen-form-item">
-                        <select name="form[]" class="form">
-                           <option value="1" selected="selected">Kids</option>
-                           <option value="2">1</option>
-                           <option value="3">2</option>
-                           <option value="3">3</option>
-                           <option value="3">Other options</option>
-                        </select>
-                     </div>
-                     
 
+            <div class="booking-page__wrap">
+               <div class="booking-room">
+                  <div class="_container">
+                     <form  class="main__screen-form stay__form booking-room__form">
+                        <div class="booking-room__form-wrapper">
+                           <div class="main__screen-form-item">
+                              <select name="form[]" class="form">
+                                 <option value="1" selected="selected">Location</option>
+                                 <option value="2">Ekaterina</option>
+                                 <option value="3">Ekaterina II</option>
+                              </select>
+                           </div>
+                           <div class="main__screen-form-item input__datepicker-wrap">
+                              <input type="text" id="datepicker01"  class="input__datepicker" placeholder="Arriving">
+                           </div>
+                           <div class="main__screen-form-item input__datepicker-wrap">
+                              <input type="text" id="datepicker02" class="input__datepicker" placeholder="Leaving">
+                           </div>
+                           <div class="main__screen-form-item">
+                              <select name="form[]" class="form">
+                                 <option value="1" selected="selected">Persons</option>
+                                 <option value="2">1</option>
+                                 <option value="3">2</option>
+                                 <option value="3">2 + child</option>
+                                 <option value="3">Other options</option>
+                              </select>
+                           </div>
+                           <div class="main__screen-form-item ">
+                              <label class="checkbox">
+                                 <input data-error="Ошибка" class="checkbox__input " type="checkbox" value="1" name="form[]" placeholder="">
+                                 <span class="checkbox__text booking-room__checkbox-text"><span>With breakfast only</span></span>
+                              </label>
+                           </div>
+                           <div class="main__screen-form-item ">
+                              <input type="text"  class="booking-room__input" placeholder="Check-in time">
+                           </div>
+                           <div class="main__screen-form-item ">
+                              <input type="text"  class="booking-room__input" placeholder="Check-in time">
+                           </div>
+                           <div class="main__screen-form-item">
+                              <select name="form[]" class="form">
+                                 <option value="1" selected="selected">Kids</option>
+                                 <option value="2">1</option>
+                                 <option value="3">2</option>
+                                 <option value="3">3</option>
+                                 <option value="3">Other options</option>
+                              </select>
+                           </div>
+                           
+      
+                        </div>
+                        
+         
+                        <button class="main__screen-btn section__btn ">Search</button>
+         
+                     </form>
+
+                     <div class="booking-room__card-wrap">
+                        <div class="booking-room__column booking-room__column-img">
+                           <div class="boking-room__card-img _ibg">
+                              <img src="img/room/room01.png" alt="room">
+                           </div>
+                           <div class="boking-room__card-footer">
+                              <h2 class="boking-room__card-title">Double Standart Suite</h2>
+                              <h3 class="boking-room__card-subtitle">20 m2 room with balcony</h3>
+                              <div class="main__screen-form-item">
+                                 <select name="form[]" class="form">
+                                    <option value="1" selected="selected">Double</option>
+                                    <option value="2">Ekaterina</option>
+                                    <option value="3">Ekaterina II</option>
+                                 </select>
+                              </div>
+                              <a href="#" class="boking-room__card-link">More room details</a>
+                              </div>
+                           
+                        </div>
+                        <div class="booking-room__column booking-room__column-text">
+                           <div class="booking-room-price-item">
+                              <div class="booking-room-price-item-title">Bed only</div>
+                           </div>
+                        </div>
+
+                     </div>
                   </div>
-                  
-   
-                  <button class="main__screen-btn section__btn ">Search</button>
-   
-               </form>
+
+               </div>
+               <aside class="booking-aside">
+                  <h2 class="booking__aside-title">YOUR STAY</h2>
+               </aside>
+
             </div>
-				
-				
-			</section>
+            
+
+         </main>
+			
 
 			
 			@@include('_footer.html',{})

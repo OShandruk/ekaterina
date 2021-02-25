@@ -1,27 +1,16 @@
-.booking-room {
+.booking-page {
    padding-top: 350px;
 
-   .booking-room__form {
-      position: relative;
-      width: 100%;
-      background: #FFFFFF;
-      box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.15);
-
-      
-   }
-   .booking-room__input {
-      font-family: Philosopher;
-      background-color: transparent;
-      font-size: 18px;
-      color: #4a4a4a;
-      padding: 0 15px 0 15px;
-   }
-  .booking-room__bredcrumb {
-     margin-bottom: 50px;
+   .booking-room__bredcrumb {
+      margin-bottom: 100px;
+    
   }
    .booking-room__bredcrumb-row {
+      width: 80%;
+      margin: 0 auto;
    }
    .booking-room__bredcrumb-list {
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -48,12 +37,43 @@
       height: 1px;
       background: #B98B4B;
    }
+   
+}
+.booking-page__wrap {
+   display: flex;
+}
+.booking-aside {
+   flex: 0 1 20%;
+   padding: 0px 15px 15px 30px;
+}
+
+.booking-room {
+   flex: 0 1 80%;
+   padding: 50px 30px 50px 5%;
+   
+
+   .booking-room__form {
+      position: relative;
+      width: 100%;
+      background: #FFFFFF;
+      box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.15);
+
+      
+   }
+   .booking-room__input {
+      font-family: Philosopher;
+      background-color: transparent;
+      font-size: 18px;
+      color: #4a4a4a;
+      padding: 0 15px 0 15px;
+   }
+  
 }
 .booking-room__form-wrapper {
    display: flex;
    flex-wrap: wrap;
    .main__screen-form-item {
-      width: 225px;
+      width: 220px;
       margin-right: 0;
       margin: 0px  30px 40px 0px;
 
@@ -120,4 +140,56 @@
          font-size: 18px;
       }
    }
+}
+
+
+.booking-room__card-wrap {
+   padding: 50px 0px 50px 0px;
+   display: flex;
+}
+.booking-room__column {
+}
+.booking-room__column-img {
+   flex: 0 1 34%;
+   margin-right: 30px;
+   background-color: #635F5B;
+   font-family: 'Philosopher';
+   
+   color: #FFFFFF;
+}
+.boking-room__card-img {
+   height: 207px;
+   margin-bottom: 25px;
+}
+.boking-room__card-footer {
+   padding: 0px 20px 20px 20px;
+   .main__screen-form-item {
+      min-width: 180px;
+      border-bottom: none;
+      margin: 15px 0px 15px 0px;
+   }
+   .select__value {
+      justify-content: flex-end;
+      padding: 0;
+   }
+}
+.boking-room__card-title {
+   
+   font-size: 28px;
+   line-height: 100%;
+}
+.boking-room__card-subtitle {
+}
+.main__screen-form-item {
+}
+.form {
+}
+.boking-room__card-link {
+   color: inherit;
+   text-decoration: underline;
+}
+.booking-room__column-text {
+   flex: 0 1 66%;
+}
+.booking-room-price-item {
 }
