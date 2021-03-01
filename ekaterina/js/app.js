@@ -2035,6 +2035,12 @@ const  picker  =  datepicker ('#datepicker01' ,{
 	position: 'tr'
  });
 
+ const  picker3  =  datepicker ('#datepicker01-mob' ,{  
+	position: 'tr'
+});
+ const picker4 = datepicker('#datepicker02-mob',{
+	position: 'tr'
+ });
 
 //************************** */  VIDEO  BG ***********************
 
