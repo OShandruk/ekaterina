@@ -1,12 +1,17 @@
 .booking-page {
-   padding-top: 350px;
+   padding-top: 180px;
 
    .booking-room__bredcrumb {
       
   }
    .booking-room__bredcrumb-row {
-      width: 80%;
-      margin: 0 auto;
+      padding: 0px 50px 0px 50px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      @media (max-width:$md3+px){
+         padding: 0px 0px 0px 0px;
+      }
    }
    .booking-room__bredcrumb-list {
       width: 100%;
@@ -18,7 +23,7 @@
    }
    .booking-room__bredcrumb-link {
       white-space: nowrap;
-      padding: 0px 20px 0px 20px;
+      margin: 0px 20px 0px 20px;
       font-size: 18px;
       line-height: 18px;
       text-align: center;
@@ -35,29 +40,91 @@
       padding: 0px 20px 0px 20px;
       height: 1px;
       background: #B98B4B;
+      @media (max-width:$md3+px){
+         position: relative;
+         width: 5px;
+         height: 5px;
+         border-radius: 50%;
+         padding: 0;
+      }
    }
+   
    
 }
 .booking-page__wrap {
    display: flex;
 }
 .booking-aside {
-   flex: 0 1 20%;
-   padding: 0px 15px 15px 30px;
+   flex: 0 1 25%;
+   padding: 100px 5% 15px 30px;
+   @media (max-width:1500px){
+      padding-right: 2%;
+   }
 }
 
 .booking-room {
-   flex: 0 1 80%;
+   position: relative;
+   flex: 0 1 75%;
    padding: 50px 30px 50px 5%;
+   @media (max-width:1400px){
+      padding-left: 1%;
+   }
+   @media (max-width:$md2+px){
+      flex: 0 1 100%;
+      padding-right: 1%;
+   }
+   
+   &::after {
+      content:'';
+      position: absolute;
+      top: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      right: 0;
+      width: 2px;
+      height: 90%;
+      background: #B98B4B;
+      @media (max-width:$md2+px){
+         display: none;
+      }
+   }
    
 
    .booking-room__form {
+      display: block;
       position: relative;
       width: 100%;
       background: #FFFFFF;
       box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.15);
+      @media (max-width:$md2+px){
+         display: none;
+      }
 
       
+   }
+   .booking-room__form-mobile {
+      display: none;
+      position: relative;
+      width: 100%;
+      background: #FFFFFF;
+      box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.15);
+      @media (max-width:$md2+px){
+         display: block;
+      }
+
+      .booking-room__form-wrapper {
+         display: flex;
+         flex-direction: row;
+      
+      }
+      .main__screen-form-item {
+         width: 125px;
+         margin: 0px 10px 0px 10px;
+      }
+      .main__screen-btn {
+         margin-top: 0;
+      }
+
    }
    .booking-room__input {
       font-family: Philosopher;
@@ -120,12 +187,14 @@
    }
    .main__screen-form-item:nth-last-child(-n + 4) {
       margin-bottom: 0;
-      @media (max-width:1150+px){
+      @media (max-width:1505px){
          margin-bottom: 40px;
       }
 
 
    }
+   
+
    .select__value {
       span   {
          font-size: 18px;
@@ -275,6 +344,156 @@
    width: 100%;
    text-transform: capitalize;
     background-color: transparent;
+    font-size: 24px;
+    color: #B98B4B;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #B98B4B;
+    &:after {
+      border: .5px solid  #B98B4B;
+    }
+}
+
+
+.stay {
+   @media (max-width:$md2+px){
+      display: none;
+   }
+}
+.stay__title {
+   font-size: 32px;
+   line-height: 39px;
+   color: #000000;
+   margin-bottom: 15px;
+   text-transform: uppercase;
+}
+.stay__chek-wrap {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+  
+}
+.stay__chek-in {
+   margin-right: 15px;
+   
+}
+.stay__chek-out {
+}
+.stay__dey {
+   span {
+      color: rgba(0, 0, 0, 0.6);
+   }
+}
+.stay__person {
+
+}
+.stay__spoller-block {
+   margin: 40px 0px 20px 0px;
+
+
+}
+.stay__spoller-block-item {
+}
+.stay__spoller-block-title {
+   position: relative;
+   cursor: pointer;
+   &::before {
+      content:'';
+      position: absolute;
+      top: 5px;
+      left: -18px;
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      background: url(../img/booking/delete.svg) center no-repeat;
+   } 
+   &::after {
+      content:'';
+      position: absolute;
+      top: 8px;
+      right: -10px;
+      width: 24px;
+      height: 15px;
+      cursor: pointer;
+      background: url(../img/booking/arrow1.svg  ) center no-repeat;
+      transition: all 0.3s ease;
+   } 
+   
+
+}
+.stay__spoller-block-title._active {
+   &:after {
+      transform: rotate(180deg);
+   }
+   
+}
+.stay__spoller-block-title-wrap {
+   display: flex;
+   justify-content: space-between;
+
+   p {
+      margin-right: 20px;
+      color: #000000;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 600;
+      &:last-child {
+         white-space: nowrap;
+      }
+
+   }
+   
+}
+.stay__spoller-block-subtitle {
+   font-size: 18px;
+   color: rgba(0, 0, 0, 0.6);
+}
+.stay__spoller-block-body {
+   
+   display: flex;
+   justify-content: center;
+   display: none;
+}
+
+.stay__spoller-body-table {
+   font-size: 18px;
+   color: #000000;
+   line-height: 28px;
+   padding-top: 20px;
+   width: 90%;
+   tr {
+      line-height: 14px;
+
+   }
+}
+.stay__total {
+   margin-top: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+.stay__total-wrap {
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   padding-right: 20px;
+   margin-bottom: 20px;
+}
+.stay__total-title {
+   font-size: 28px;
+   text-transform: uppercase;
+}
+.stay__total-sum {
+   font-family: "Philosopher";
+   font-size: 24px;
+   font-weight: 700;
+}
+.stay__total-btn {
+   width: 80%;
+   display: block;
+   text-transform: capitalize;
+    background-color: transparent;
+    text-align: center;
     font-size: 24px;
     color: #B98B4B;
     padding: 10px 10px 10px 10px;
