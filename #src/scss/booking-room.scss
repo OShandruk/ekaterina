@@ -29,6 +29,9 @@
       text-align: center;
       text-transform: uppercase;
       color: rgba(0, 0, 0, 0.4);
+      @media (max-width:$md4+px){
+         font-size: 14px;
+      }
      
    }
    .active {
@@ -91,7 +94,7 @@
    
 
    .booking-room__form {
-      display: block;
+      display: flex;
       position: relative;
       width: 100%;
       background: #FFFFFF;
@@ -107,7 +110,9 @@
       position: relative;
       width: 100%;
       background: #FFFFFF;
-      box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.15);
+      // box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 11px 8px -10px #CCC, 0px -11px 8px -10px #CCC; 
+      padding: 30px 0px 30px 0px;
       @media (max-width:$md2+px){
          display: block;
       }
@@ -115,14 +120,16 @@
       .booking-room__form-wrapper {
          display: flex;
          flex-direction: row;
+         justify-content: center;
       
       }
       .main__screen-form-item {
-         min-width: 125px;
+         width: 45%;
          margin: 0px 10px 0px 10px;
       }
       .main__screen-btn {
          margin-top: 0;
+         align-self: center;
       }
 
    }
@@ -230,6 +237,11 @@
    padding: 50px 0px 30px 0px;
    display: flex;
    align-items: flex-start;
+   @media (max-width:$md2+px){
+      flex-direction: column; 
+      align-items: stretch; 
+     
+   }
 }
 .booking-room__column {
 }
@@ -238,8 +250,12 @@
    margin-right: 30px;
    background-color: #635F5B;
    font-family: 'Philosopher';
-   
    color: #FFFFFF;
+   @media (max-width:$md2+px){
+      flex: auto;
+      margin-right: 0;
+      
+   }
 }
 .boking-room__card-img {
    height: 207px;
@@ -253,6 +269,7 @@
       margin: 15px 0px 15px 0px;
    }
    .select__value {
+      color:#fff;
       flex-direction: row;
       justify-content: flex-start;
       padding: 0;
@@ -262,6 +279,7 @@
          width: 20px;
          height: 15px;
          order: 2;
+         background: url(../img/header/arrow.svg) center/100% no-repeat;
       }
       &:after {
          content:'';
@@ -301,6 +319,9 @@
 }
 .booking-room__column-text {
    flex: 0 1 66%;
+   @media (max-width:$md2+px){
+      flex: auto;
+   }
 }
 .booking-room-price-item {
    display: flex;
