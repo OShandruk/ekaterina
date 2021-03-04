@@ -87,5 +87,86 @@
 
 	}
 }
-//====================================================================================================
-//====================================================================================================
+
+/*=================STAY MOBILE POPUP==============================*/
+
+
+.popup_stay-mobile {
+	color: #fff;
+	&:before {
+		background-color: #393734;
+	}
+
+	.popup__stay-mobile-wrap{
+		
+	}
+	.stay-mobile__title {
+		font-size: 22px;
+		margin-bottom: 25px;
+	}
+	.stay-mobile__chek-wrap {
+		display: flex;
+		justify-content: space-between;
+	}
+	.stay-mobile__chek-in {
+		font-size: 16px;
+	}
+	.stay-mobile__chek-out {
+		font-size: 16px;
+	}
+	.stay-mobile__dey {
+		font-size: 16px;
+
+	}
+	.stay-mobile__person {
+	}
+	.stay-mobile__spoller-block {
+	}
+	._spollers {
+	}
+	.stay-mobile__spoller-block-item {
+	}
+	.stay-mobile__spoller-block-title {
+	}
+	._spoller {
+	}
+	.stay-mobile__spoller-block-title-wrap {
+	}
+	.stay-mobile__spoller-block-subtitle {
+	}
+	.stay-mobile__spoller-block-body {
+	}
+	.stay-mobile__spoller-body-table {
+	}
+	.stay-mobile__total {
+	}
+	.stay-mobile__total-wrap {
+	}
+	.stay-mobile__total-title {
+	}
+	.stay-mobile__total-sum {
+	}
+	.stay-mobile__total-btn {
+	}
+	.section__btn {
+	}
+
+}
+
+
+.stay-mobile__popup-body {
+	width: 100%;
+	height: 100%;
+	background-color: #393734;
+}
+
+.stay-mobile-popup__close {
+	top: 20px;
+	right: 20px;
+}
+
+
+
+
+/*===============================================================*/
+

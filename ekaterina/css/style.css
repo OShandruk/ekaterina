@@ -2308,6 +2308,55 @@ button.swiper-pagination-bullet {
   right: 50px;
 }
 
+/*=================STAY MOBILE POPUP==============================*/
+
+.popup_stay-mobile {
+  color: #fff;
+}
+
+.popup_stay-mobile:before {
+  background-color: #393734;
+}
+
+.popup_stay-mobile .stay-mobile__title {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.popup_stay-mobile .stay-mobile__chek-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popup_stay-mobile .stay-mobile__chek-in {
+  font-size: 16px;
+}
+
+.popup_stay-mobile .stay-mobile__chek-out {
+  font-size: 16px;
+}
+
+.popup_stay-mobile .stay-mobile__dey {
+  font-size: 16px;
+}
+
+.stay-mobile__popup-body {
+  width: 100%;
+  height: 100%;
+  background-color: #393734;
+}
+
+.stay-mobile-popup__close {
+  top: 20px;
+  right: 20px;
+}
+
+/*===============================================================*/
+
 /*HEADER
 ==================================================================*/
 
